@@ -23,10 +23,88 @@ Enter the backend source folder and add a few dependencies:
 ```bash
 cd demo3/src/demo3_backend/
 
-cargo add --git https://github.com/wasm-forge/ic_polyfill
+cargo add --git https://github.com/wasm-forge/ic-wasi-polyfill
 
 cargo add --git https://github.com/wasm-forge/rusqlite rusqlite -F bundled
 ```
+
+Modify the demo3/src/demo3_backend/src/lib.rs file containing the greet method so that it uses the rusqlite backend to store a list of persons:
+```rust
+use std::cell::RefCell;
+
+use rusqlite::Connection;
+
+thread_local! {
+    static DB: RefCell<Option<Connection>> = RefCell::new(None);
+}
+
+#[ic_cdk::update]
+fn add(name: String, data: String) {
+    DB.with(|db| {
+        let mut db = db.borrow_mut();
+        let db = db.as_mut().unwrap();
+        db.execute(
+            "INSERT INTO person (name, data) VALUES (?1, ?2)",
+            (&name, &data),
+        )
+        .unwrap();
+    });
+}
+
+#[ic_cdk::query]
+fn list() -> Vec<(u64, String, String)> {
+    DB.with(|db| {
+        let mut db = db.borrow_mut();
+        let db = db.as_mut().unwrap();
+        let mut stmt = db.prepare("SELECT id, name, data FROM person").unwrap();
+        let rows = stmt
+            .query_map([], |row| {
+                Ok((
+                    row.get(0).unwrap(),
+                    row.get(1).unwrap(),
+                    row.get(2).unwrap(),
+                ))
+            })
+            .unwrap();
+        let mut result = vec![];
+        for person in rows {
+            result.push(person.unwrap());
+        }
+        result
+    })
+}
+
+#[ic_cdk::init]
+fn init() {
+    ic_wasi_polyfill::init(0);
+
+    DB.with(|db| {
+        let mut db = db.borrow_mut();
+        *db = Some(Connection::open("db.db3").unwrap());
+        let db = db.as_mut().unwrap();
+        db.execute(
+            "CREATE TABLE person (
+                id    INTEGER PRIMARY KEY,
+                name  TEXT NOT NULL,
+                data  TEXT
+           )",
+            (), // empty list of parameters.
+        )
+        .unwrap();
+    });
+}
+```
+
+Once the file is updated, setup the environment variables to be able to compile using `clang` for WASI:
+```bash
+export CC=/opt/wasi-sdk/bin/clang
+```
+
+Now, build the wasm-wasi project with the command:
+```bash
+cargo build --release --target wasm32-wasi
+```
+
 
 
 ## Deployment and testing
