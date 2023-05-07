@@ -119,3 +119,18 @@ Go to the `demo3` project folder and deploy the project:
 dfx deploy
 ```
 
+Now, use the `wasi2ic` tool to re-route the dependencies:
+```bash
+wasi2ic demo3_backend.wasm no_wasi.wasm
+```
+
+Deploy the canister:
+```bash
+dfx canister install --mode reinstall --wasm no_wasi.wasm demo3_backend
+```
+
+Try running commands to update and query the database:
+```bash
+
+```
+
