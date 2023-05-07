@@ -1,4 +1,4 @@
-#![no_std]
+
 use std::cell::RefCell;
 
 use rusqlite::Connection;
