@@ -25,7 +25,7 @@ cd demo3/src/demo3_backend/
 
 cargo add --git https://github.com/wasm-forge/ic_polyfill
 
-cargo add --git https://github.com/wasm-forge/rusqlite rusqlite
+cargo add --git https://github.com/wasm-forge/rusqlite rusqlite -F bundled
 ```
 
 
