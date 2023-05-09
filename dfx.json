@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "canisters": {
+    "demo3_backend": {
+      "type": "rust",
+      "package": "demo3_backend",
+      "candid": "src/demo3_backend/demo3_backend.did"
+    },
+    "demo3_frontend": {
+      "type": "assets",
+      "source": [
+        "src/demo3_frontend/assets"
+      ],
+      "dependencies": [
+        "demo3_backend"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "output_env_file": ".env"
+}
