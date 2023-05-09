@@ -25,7 +25,7 @@ cd demo3/src/demo3_backend/
 
 cargo add --git https://github.com/wasm-forge/ic-wasi-polyfill
 
-cargo add --git https://github.com/wasm-forge/rusqlite rusqlite -F bundled
+cargo add --git https://github.com/rusqlite/rusqlite rusqlite -F wasm32-wasi-vfs,bundled
 ```
 
 Modify the demo3/src/demo3_backend/src/lib.rs file containing the greet method so that it uses the rusqlite backend to store a list of persons:
