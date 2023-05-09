@@ -105,8 +105,6 @@ Now, build the wasm-wasi project with the command:
 cargo build --release --target wasm32-wasi
 ```
 
-
-
 ## Deployment and testing
 
 In a separate terminal start the `dfx` environment:
@@ -124,13 +122,24 @@ Now, use the `wasi2ic` tool to re-route the dependencies:
 wasi2ic demo3_backend.wasm no_wasi.wasm
 ```
 
-Deploy the canister:
+The file is likely to exceed the deployment limit, use compression:
 ```bash
-dfx canister install --mode reinstall --wasm no_wasi.wasm demo3_backend
+gzip no_wasi.wasm
+```
+This creates a compressed file `no_wasi.wasm.gz`.
+
+Now, deploy the canister:
+```bash
+dfx canister install --mode reinstall --wasm no_wasi.wasm.gz demo3_backend
 ```
 
-Try running commands to update and query the database:
+Try running commands to update and query the database. To add a person, run:
 ```bash
+dfx canister call demo3_backend add John Test1
+```
 
+To retrieve the persons stored, use:
+```bash
+dfx canister call demo3_backend greet test_hello
 ```
 
