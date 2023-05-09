@@ -112,7 +112,7 @@ In a separate terminal start the `dfx` environment:
 dfx start
 ```
 
-Go to the `demo3` project folder and deploy the canister:
+Go to the `demo3` project folder and create the canister:
 ```bash
 dfx canister create --all
 ```
