@@ -135,11 +135,15 @@ dfx canister install --mode reinstall --wasm no_wasi.wasm.gz demo3_backend
 
 Try running commands to update and query the database. To add a person, run:
 ```bash
-dfx canister call demo3_backend add John Test1
+dfx canister call demo3_backend add '("Amy","test1")'
+
+dfx canister call demo3_backend add '("John","test2")'
+
+dfx canister call demo3_backend add '("Mark","test3")'
 ```
 
 To retrieve the persons stored, use:
 ```bash
-dfx canister call demo3_backend greet test_hello
+dfx canister call demo3_backend list
 ```
 
