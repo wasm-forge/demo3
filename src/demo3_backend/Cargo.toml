@@ -12,4 +12,4 @@ crate-type = ["cdylib"]
 candid = "0.8.2"
 ic-cdk = "0.7.4"
 ic-wasi-polyfill = { git = "https://github.com/wasm-forge/ic-wasi-polyfill", version = "0.3.4" }
-rusqlite = { git = "https://github.com/wasm-forge/rusqlite", version = "0.29.0", features = ["bundled"] }
+rusqlite = { git = "https://github.com/rusqlite/rusqlite", version = "0.29.0", features = ["bundled", "wasm32-wasi-vfs"] }

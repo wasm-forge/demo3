@@ -558,7 +558,7 @@ checksum = "2b00cc1c228a6782d0f076e7b232802e0c5689d41bb5df366f2a6b6621cfdfe1"
 [[package]]
 name = "libsqlite3-sys"
 version = "0.26.0"
-source = "git+https://github.com/wasm-forge/rusqlite#ef4a0ac09d22047d4655a741fde89702d7ca3395"
+source = "git+https://github.com/rusqlite/rusqlite#1a82396f2e54e2adb0908f66efd91d3a3c58cfaf"
 dependencies = [
  "cc",
  "pkg-config",
@@ -863,7 +863,7 @@ checksum = "a5996294f19bd3aae0453a862ad728f60e6600695733dd5df01da90c54363a3c"
 [[package]]
 name = "rusqlite"
 version = "0.29.0"
-source = "git+https://github.com/wasm-forge/rusqlite#ef4a0ac09d22047d4655a741fde89702d7ca3395"
+source = "git+https://github.com/rusqlite/rusqlite#1a82396f2e54e2adb0908f66efd91d3a3c58cfaf"
 dependencies = [
  "bitflags 2.2.1",
  "fallible-iterator",
