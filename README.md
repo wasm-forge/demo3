@@ -114,7 +114,7 @@ dfx start
 
 Go to the `demo3` project folder and deploy the canister:
 ```bash
-dfx canister create --l
+dfx canister create --all
 ```
 
 Now, use the `wasi2ic` tool to re-route the dependencies:
