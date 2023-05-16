@@ -76,7 +76,7 @@ fn list() -> Vec<(u64, String, String)> {
 
 #[ic_cdk::init]
 fn init() {
-    ic_wasi_polyfill::init(0);
+    ic_wasi_polyfill::init(&[0u8;32]);
 
     DB.with(|db| {
         let mut db = db.borrow_mut();
