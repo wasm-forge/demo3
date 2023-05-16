@@ -449,8 +449,8 @@ checksum = "0c0c68bf2fb590e3c3b4e0719383fb2cdceb308cd62df9fef571323b418f7e1c"
 
 [[package]]
 name = "ic-wasi-polyfill"
-version = "0.3.4"
-source = "git+https://github.com/wasm-forge/ic-wasi-polyfill#01dc79c84dc1de37bba104ac0a87f4faf7308937"
+version = "0.3.5"
+source = "git+https://github.com/wasm-forge/ic-wasi-polyfill#57ea41ca4e681451b949ccfa71086529d2ef1829"
 dependencies = [
  "ic-cdk",
  "ic-stable-structures",
