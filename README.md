@@ -149,7 +149,7 @@ To retrieve the persons stored, use:
 dfx canister call demo3_backend list
 ```
 
-## [Performance benchmarks for SQL commands]
+## Performance benchmarks for SQL commands
 
 The performance estimation was made similar to the one in the alternative [project](https://github.com/froghub-io/ic-sqlite/) implementing the sqlite in IC canister.
 
