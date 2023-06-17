@@ -149,3 +149,23 @@ To retrieve the persons stored, use:
 dfx canister call demo3_backend list
 ```
 
+## [Performance benchmarks for SQL commands](https://github.com/froghub-io/ic-sqlite/tree/main/examples/bench)
+
+The performance estimation was made similar to the one in the alternative [project](https://github.com/froghub-io/ic-sqlite/) implementing the sqlite in IC canister.
+
+
+| SQL <br/> commands               | performance counter <br/> 10K rows | performance counter <br/> 100K rows | performance counter <br/> 500K rows | performance counter <br/> 1M rows |
+|----------------------------------|------------------------------------------------|-------------------------------------------------|-------------------------------------------------|--------------------------------------------------|
+| create table                     | 5235895                                        | 6477727                                         | 9112574                                         | 12728842                                         | 
+| create index <br/> (empty table) | 5077409                                        | 6313159                                         | 8611051                                         | 10063972                                         |
+| count                            | 520789                                         | 102162132                                       | 570086368                                       | 1202162011                                       | 
+| insert                           | 7083561                                        | 8429386                                         | 7670133                                         | 8038125                                          | 
+| select <br/> (where primary key) | 569666                                         | 599329                                          | 632169                                          | 670414                                           | 
+| select <br/> (where index field) | 610937                                         | 642083                                          | 675611                                          | 716432                                           | 
+| select <br/> (where like field)  | 153412973                                      | 1637608328                                      | limit for single message execution              | limit for single message execution               | 
+| update <br/> (where primary key) | 8100314                                        | 9622378                                         | 8991314                                         | 9690872                                          | 
+| update <br/> (where index filed) | 531129                                         | 558131                                          | 591241                                          | 629889                                           | 
+| delete <br/> (where primary key) | 10079160                                       | 8397133                                         | 11474854                                        | 11996039                                         |
+
+
+
