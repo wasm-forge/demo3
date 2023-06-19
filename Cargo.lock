@@ -261,7 +261,7 @@ name = "demo3_backend"
 version = "0.1.0"
 dependencies = [
  "candid",
- "ic-cdk 0.7.4",
+ "ic-cdk",
  "ic-wasi-polyfill",
  "rusqlite",
 ]
@@ -444,19 +444,6 @@ checksum = "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70"
 
 [[package]]
 name = "ic-cdk"
-version = "0.7.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9beb0bf1dcd0639c313630e34aa547a2b19450ddf1969c176e13225ef3b29048"
-dependencies = [
- "candid",
- "ic-cdk-macros",
- "ic0",
- "serde",
- "serde_bytes",
-]
-
-[[package]]
-name = "ic-cdk"
 version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1faa7b42964694fb38d7f62172e0d8261381e39ce85b4d6b519929f7cad9b4fb"
@@ -491,10 +478,10 @@ checksum = "b4e026318236de13568edafd85534ad29910908bf08cdcf177d4403fd4a5f6c4"
 [[package]]
 name = "ic-wasi-polyfill"
 version = "0.3.8"
-source = "git+https://github.com/wasm-forge/ic-wasi-polyfill#d2faf36155c454d7c87272d953c1c2dc0b6bc1b6"
+source = "git+https://github.com/wasm-forge/ic-wasi-polyfill#0e1319a2f4fa7ed359044c8a095c44c305c6acff"
 dependencies = [
  "function_name",
- "ic-cdk 0.8.1",
+ "ic-cdk",
  "ic-stable-structures",
  "rand",
  "stable-fs",
@@ -600,7 +587,7 @@ checksum = "f92be4933c13fd498862a9e02a3055f8a8d9c039ce33db97306fd5a6caa7f29b"
 [[package]]
 name = "libsqlite3-sys"
 version = "0.26.0"
-source = "git+https://github.com/rusqlite/rusqlite#60fdf0b606c89afd604228c541ce226ee28e7ff1"
+source = "git+https://github.com/rusqlite/rusqlite#3fe9a7f2cdc9ad641c0cfa327acbea1b5316953b"
 dependencies = [
  "cc",
  "pkg-config",
@@ -911,7 +898,7 @@ checksum = "436b050e76ed2903236f032a59761c1eb99e1b0aead2c257922771dab1fc8c78"
 [[package]]
 name = "rusqlite"
 version = "0.29.0"
-source = "git+https://github.com/rusqlite/rusqlite#60fdf0b606c89afd604228c541ce226ee28e7ff1"
+source = "git+https://github.com/rusqlite/rusqlite#3fe9a7f2cdc9ad641c0cfa327acbea1b5316953b"
 dependencies = [
  "bitflags 2.3.2",
  "fallible-iterator",
@@ -1017,7 +1004,7 @@ source = "git+https://github.com/wasm-forge/stable-fs?rev=77575a3f3b19a7decd5258
 dependencies = [
  "bitflags 2.3.2",
  "ciborium",
- "ic-cdk 0.8.1",
+ "ic-cdk",
  "ic-stable-structures",
  "serde",
  "serde_bytes",

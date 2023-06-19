@@ -1,0 +1,1442 @@
+(variant { Ok = "execute performance_counter: 4391110" })
+(variant { Ok = "execute performance_counter: 3777842" })
+--- 10000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 5236206" })
+(variant { Ok = "execute performance_counter: 5077720" })
+(variant { Ok = "count performance_counter: 520870" })
+(variant { Ok = "insert performance_counter: 7083852" })
+(variant { Ok = "query_by_id performance_counter: 569940" })
+(variant { Ok = "query_by_name performance_counter: 611211" })
+(variant { Ok = "query_by_like_name performance_counter: 153412963" })
+(variant { Ok = "query_by_limit_offset performance_counter: 36955280" })
+(variant { Ok = "update_by_name performance_counter: 531119" })
+(variant { Ok = "update_by_id performance_counter: 8100605" })
+(variant { Ok = "delete performance_counter: 10079451" })
+--- 20000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 5486021" })
+(variant { Ok = "execute performance_counter: 5879572" })
+(variant { Ok = "count performance_counter: 561669" })
+(variant { Ok = "insert performance_counter: 7339188" })
+(variant { Ok = "query_by_id performance_counter: 579878" })
+(variant { Ok = "query_by_name performance_counter: 621065" })
+(variant { Ok = "query_by_like_name performance_counter: 305696728" })
+(variant { Ok = "query_by_limit_offset performance_counter: 72750485" })
+(variant { Ok = "update_by_name performance_counter: 540260" })
+(variant { Ok = "update_by_id performance_counter: 8434630" })
+(variant { Ok = "delete performance_counter: 7233744" })
+--- 30000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 6283685" })
+(variant { Ok = "execute performance_counter: 6228958" })
+(variant { Ok = "count performance_counter: 598816" })
+(variant { Ok = "insert performance_counter: 6714387" })
+(variant { Ok = "query_by_id performance_counter: 585153" })
+(variant { Ok = "query_by_name performance_counter: 626226" })
+(variant { Ok = "query_by_like_name performance_counter: 458630965" })
+(variant { Ok = "query_by_limit_offset performance_counter: 108529471" })
+(variant { Ok = "update_by_name performance_counter: 545818" })
+(variant { Ok = "update_by_id performance_counter: 7880883" })
+(variant { Ok = "delete performance_counter: 10484865" })
+--- 40000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 7147522" })
+(variant { Ok = "execute performance_counter: 5839684" })
+(variant { Ok = "count performance_counter: 639286" })
+(variant { Ok = "insert performance_counter: 6460760" })
+(variant { Ok = "query_by_id performance_counter: 596600" })
+(variant { Ok = "query_by_name performance_counter: 639025" })
+(variant { Ok = "query_by_like_name performance_counter: 611571363" })
+(variant { Ok = "query_by_limit_offset performance_counter: 144321204" })
+(variant { Ok = "update_by_name performance_counter: 557766" })
+(variant { Ok = "update_by_id performance_counter: 7641932" })
+(variant { Ok = "delete performance_counter: 10331900" })
+--- 50000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 5656452" })
+(variant { Ok = "execute performance_counter: 5892150" })
+(variant { Ok = "count performance_counter: 5079755" })
+(variant { Ok = "insert performance_counter: 6705350" })
+(variant { Ok = "query_by_id performance_counter: 590156" })
+(variant { Ok = "query_by_name performance_counter: 632858" })
+(variant { Ok = "query_by_like_name performance_counter: 780029090" })
+(variant { Ok = "query_by_limit_offset performance_counter: 195619175" })
+(variant { Ok = "update_by_name performance_counter: 551626" })
+(variant { Ok = "update_by_id performance_counter: 7856305" })
+(variant { Ok = "delete performance_counter: 10190789" })
+--- 60000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 5893232" })
+(variant { Ok = "execute performance_counter: 5704034" })
+(variant { Ok = "count performance_counter: 21773447" })
+(variant { Ok = "insert performance_counter: 8128198" })
+(variant { Ok = "query_by_id performance_counter: 588776" })
+(variant { Ok = "query_by_name performance_counter: 631188" })
+(variant { Ok = "query_by_like_name performance_counter: 955074529" })
+(variant { Ok = "query_by_limit_offset performance_counter: 246464939" })
+(variant { Ok = "update_by_name performance_counter: 550903" })
+(variant { Ok = "update_by_id performance_counter: 8518737" })
+(variant { Ok = "delete performance_counter: 10572043" })
+--- 70000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 5814437" })
+(variant { Ok = "execute performance_counter: 5068540" })
+(variant { Ok = "count performance_counter: 42291687" })
+(variant { Ok = "insert performance_counter: 10162580" })
+(variant { Ok = "query_by_id performance_counter: 596205" })
+(variant { Ok = "query_by_name performance_counter: 638898" })
+(variant { Ok = "query_by_like_name performance_counter: 1128350108" })
+(variant { Ok = "query_by_limit_offset performance_counter: 287355506" })
+(variant { Ok = "update_by_name performance_counter: 557038" })
+(variant { Ok = "update_by_id performance_counter: 7720465" })
+(variant { Ok = "delete performance_counter: 6209606" })
+--- 80000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 6423384" })
+(variant { Ok = "execute performance_counter: 6751343" })
+(variant { Ok = "count performance_counter: 65057413" })
+(variant { Ok = "insert performance_counter: 7589495" })
+(variant { Ok = "query_by_id performance_counter: 592228" })
+(variant { Ok = "query_by_name performance_counter: 636094" })
+(variant { Ok = "query_by_like_name performance_counter: 1302197437" })
+(variant { Ok = "query_by_limit_offset performance_counter: 327957434" })
+(variant { Ok = "update_by_name performance_counter: 553250" })
+(variant { Ok = "update_by_id performance_counter: 8781277" })
+(variant { Ok = "delete performance_counter: 7415240" })
+--- 90000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 5869241" })
+(variant { Ok = "execute performance_counter: 6230125" })
+(variant { Ok = "count performance_counter: 85813462" })
+(variant { Ok = "insert performance_counter: 7046530" })
+(variant { Ok = "query_by_id performance_counter: 596208" })
+(variant { Ok = "query_by_name performance_counter: 638538" })
+(variant { Ok = "query_by_like_name performance_counter: 1471675594" })
+(variant { Ok = "query_by_limit_offset performance_counter: 369615681" })
+(variant { Ok = "update_by_name performance_counter: 555978" })
+(variant { Ok = "update_by_id performance_counter: 8238079" })
+(variant { Ok = "delete performance_counter: 6904343" })
+--- 100000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 6478038" })
+(variant { Ok = "execute performance_counter: 6313470" })
+(variant { Ok = "count performance_counter: 102162213" })
+(variant { Ok = "insert performance_counter: 8429677" })
+(variant { Ok = "query_by_id performance_counter: 599603" })
+(variant { Ok = "query_by_name performance_counter: 642357" })
+(variant { Ok = "query_by_like_name performance_counter: 1637608318" })
+(variant { Ok = "query_by_limit_offset performance_counter: 411098961" })
+(variant { Ok = "update_by_name performance_counter: 558121" })
+(variant { Ok = "update_by_id performance_counter: 9622669" })
+(variant { Ok = "delete performance_counter: 8397424" })
+--- 110000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 5913283" })
+(variant { Ok = "execute performance_counter: 5212912" })
+(variant { Ok = "count performance_counter: 100441834" })
+(variant { Ok = "insert performance_counter: 6493551" })
+(variant { Ok = "query_by_id performance_counter: 600732" })
+(variant { Ok = "query_by_name performance_counter: 643453" })
+(variant { Ok = "query_by_like_name performance_counter: 1801020311" })
+(variant { Ok = "query_by_limit_offset performance_counter: 452369399" })
+(variant { Ok = "update_by_name performance_counter: 559474" })
+(variant { Ok = "update_by_id performance_counter: 7850799" })
+(variant { Ok = "delete performance_counter: 6299870" })
+--- 120000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 6500477" })
+(variant { Ok = "execute performance_counter: 5662557" })
+(variant { Ok = "count performance_counter: 99883538" })
+(variant { Ok = "insert performance_counter: 6271579" })
+(variant { Ok = "query_by_id performance_counter: 605852" })
+(variant { Ok = "query_by_name performance_counter: 649310" })
+(variant { Ok = "query_by_like_name performance_counter: 1966534675" })
+(variant { Ok = "query_by_limit_offset performance_counter: 494966776" })
+(variant { Ok = "update_by_name performance_counter: 564709" })
+(variant { Ok = "update_by_id performance_counter: 7557086" })
+(variant { Ok = "delete performance_counter: 6093642" })
+--- 130000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 5942963" })
+(variant { Ok = "execute performance_counter: 5761586" })
+(variant { Ok = "count performance_counter: 98076131" })
+(variant { Ok = "insert performance_counter: 7279773" })
+(variant { Ok = "query_by_id performance_counter: 605373" })
+(variant { Ok = "query_by_name performance_counter: 648859" })
+(variant { Ok = "query_by_like_name performance_counter: 2131955292" })
+(variant { Ok = "query_by_limit_offset performance_counter: 535755279" })
+(variant { Ok = "update_by_name performance_counter: 564094" })
+(variant { Ok = "update_by_id performance_counter: 8465175" })
+(variant { Ok = "delete performance_counter: 7130828" })
+--- 140000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 6950718" })
+(variant { Ok = "execute performance_counter: 6113026" })
+(variant { Ok = "count performance_counter: 101040275" })
+(variant { Ok = "insert performance_counter: 7236930" })
+(variant { Ok = "query_by_id performance_counter: 609030" })
+(variant { Ok = "query_by_name performance_counter: 652601" })
+(variant { Ok = "query_by_like_name performance_counter: 2298175576" })
+(variant { Ok = "query_by_limit_offset performance_counter: 578397592" })
+(variant { Ok = "update_by_name performance_counter: 568264" })
+(variant { Ok = "update_by_id performance_counter: 8529937" })
+(variant { Ok = "delete performance_counter: 10814609" })
+--- 150000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 6107733" })
+(variant { Ok = "execute performance_counter: 6305552" })
+(variant { Ok = "count performance_counter: 124147472" })
+(variant { Ok = "insert performance_counter: 7026136" })
+(variant { Ok = "query_by_id performance_counter: 607799" })
+(variant { Ok = "query_by_name performance_counter: 651621" })
+(variant { Ok = "query_by_like_name performance_counter: 2463572990" })
+(variant { Ok = "query_by_limit_offset performance_counter: 619187322" })
+(variant { Ok = "update_by_name performance_counter: 566812" })
+(variant { Ok = "update_by_id performance_counter: 8256691" })
+(variant { Ok = "delete performance_counter: 6923321" })
+--- 160000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 5727469" })
+(variant { Ok = "execute performance_counter: 5547383" })
+(variant { Ok = "count performance_counter: 148705487" })
+(variant { Ok = "insert performance_counter: 6895926" })
+(variant { Ok = "query_by_id performance_counter: 609379" })
+(variant { Ok = "query_by_name performance_counter: 653098" })
+(variant { Ok = "query_by_like_name performance_counter: 2627296334" })
+(variant { Ok = "query_by_limit_offset performance_counter: 660823320" })
+(variant { Ok = "update_by_name performance_counter: 569268" })
+(variant { Ok = "update_by_id performance_counter: 8325668" })
+(variant { Ok = "delete performance_counter: 10416112" })
+--- 170000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 6344101" })
+(variant { Ok = "execute performance_counter: 6169392" })
+(variant { Ok = "count performance_counter: 173396886" })
+(variant { Ok = "insert performance_counter: 7085787" })
+(variant { Ok = "query_by_id performance_counter: 613908" })
+(variant { Ok = "query_by_name performance_counter: 658422" })
+(variant { Ok = "query_by_like_name performance_counter: 2795700016" })
+(variant { Ok = "query_by_limit_offset performance_counter: 703237429" })
+(variant { Ok = "update_by_name performance_counter: 573141" })
+(variant { Ok = "update_by_id performance_counter: 10245131" })
+(variant { Ok = "delete performance_counter: 6838236" })
+--- 180000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8786585" })
+(variant { Ok = "execute performance_counter: 7104953" })
+(variant { Ok = "count performance_counter: 195660401" })
+(variant { Ok = "insert performance_counter: 10549670" })
+(variant { Ok = "query_by_id performance_counter: 615004" })
+(variant { Ok = "query_by_name performance_counter: 660078" })
+(variant { Ok = "query_by_like_name performance_counter: 2962007709" })
+(variant { Ok = "query_by_limit_offset performance_counter: 745679092" })
+(variant { Ok = "update_by_name performance_counter: 574567" })
+(variant { Ok = "update_by_id performance_counter: 8763864" })
+(variant { Ok = "delete performance_counter: 10525882" })
+--- 190000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8107327" })
+(variant { Ok = "execute performance_counter: 8002445" })
+(variant { Ok = "count performance_counter: 208723135" })
+(variant { Ok = "insert performance_counter: 11577373" })
+(variant { Ok = "query_by_id performance_counter: 615519" })
+(variant { Ok = "query_by_name performance_counter: 659165" })
+(variant { Ok = "query_by_like_name performance_counter: 3128539731" })
+(variant { Ok = "query_by_limit_offset performance_counter: 786816043" })
+(variant { Ok = "update_by_name performance_counter: 574537" })
+(variant { Ok = "update_by_id performance_counter: 9240807" })
+(variant { Ok = "delete performance_counter: 7996885" })
+--- 200000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 7205549" })
+(variant { Ok = "execute performance_counter: 7082486" })
+(variant { Ok = "count performance_counter: 221970101" })
+(variant { Ok = "insert performance_counter: 7074520" })
+(variant { Ok = "query_by_id performance_counter: 618004" })
+(variant { Ok = "query_by_name performance_counter: 661497" })
+(variant { Ok = "query_by_like_name performance_counter: 3294183760" })
+(variant { Ok = "query_by_limit_offset performance_counter: 829394241" })
+(variant { Ok = "update_by_name performance_counter: 577152" })
+(variant { Ok = "update_by_id performance_counter: 8565540" })
+(variant { Ok = "delete performance_counter: 10855650" })
+--- 210000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9272902" })
+(variant { Ok = "execute performance_counter: 9428278" })
+(variant { Ok = "count performance_counter: 234018963" })
+(variant { Ok = "insert performance_counter: 8962945" })
+(variant { Ok = "query_by_id performance_counter: 616991" })
+(variant { Ok = "query_by_name performance_counter: 660503" })
+(variant { Ok = "query_by_like_name performance_counter: 3460650055" })
+(variant { Ok = "query_by_limit_offset performance_counter: 870712831" })
+(variant { Ok = "update_by_name performance_counter: 575743" })
+(variant { Ok = "update_by_id performance_counter: 10228011" })
+(variant { Ok = "delete performance_counter: 8892039" })
+--- 220000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 7218956" })
+(variant { Ok = "execute performance_counter: 7099105" })
+(variant { Ok = "count performance_counter: 247990931" })
+(variant { Ok = "insert performance_counter: 7045903" })
+(variant { Ok = "query_by_id performance_counter: 620231" })
+(variant { Ok = "query_by_name performance_counter: 663905" })
+(variant { Ok = "query_by_like_name performance_counter: 3627730080" })
+(variant { Ok = "query_by_limit_offset performance_counter: 914118275" })
+(variant { Ok = "update_by_name performance_counter: 579640" })
+(variant { Ok = "update_by_id performance_counter: 8426342" })
+(variant { Ok = "delete performance_counter: 10605341" })
+--- 230000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8431272" })
+(variant { Ok = "execute performance_counter: 7798101" })
+(variant { Ok = "count performance_counter: 260199637" })
+(variant { Ok = "insert performance_counter: 6979570" })
+(variant { Ok = "query_by_id performance_counter: 623801" })
+(variant { Ok = "query_by_name performance_counter: 667672" })
+(variant { Ok = "query_by_like_name performance_counter: 3794176258" })
+(variant { Ok = "query_by_limit_offset performance_counter: 957251635" })
+(variant { Ok = "update_by_name performance_counter: 582578" })
+(variant { Ok = "update_by_id performance_counter: 8280521" })
+(variant { Ok = "delete performance_counter: 6829696" })
+--- 240000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8223614" })
+(variant { Ok = "execute performance_counter: 8612895" })
+(variant { Ok = "count performance_counter: 275258428" })
+(variant { Ok = "insert performance_counter: 7984822" })
+(variant { Ok = "query_by_id performance_counter: 624035" })
+(variant { Ok = "query_by_name performance_counter: 667885" })
+(variant { Ok = "query_by_like_name performance_counter: 3962417237" })
+(variant { Ok = "query_by_limit_offset performance_counter: 999477290" })
+(variant { Ok = "update_by_name performance_counter: 583966" })
+(variant { Ok = "update_by_id performance_counter: 9239380" })
+(variant { Ok = "delete performance_counter: 11796955" })
+--- 250000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8158644" })
+(variant { Ok = "execute performance_counter: 8053727" })
+(variant { Ok = "count performance_counter: 276526501" })
+(variant { Ok = "insert performance_counter: 7842055" })
+(variant { Ok = "query_by_id performance_counter: 618952" })
+(variant { Ok = "query_by_name performance_counter: 663452" })
+(variant { Ok = "query_by_like_name performance_counter: 4118357519" })
+(variant { Ok = "query_by_limit_offset performance_counter: 1036748179" })
+(variant { Ok = "update_by_name performance_counter: 578262" })
+(variant { Ok = "update_by_id performance_counter: 8994665" })
+(variant { Ok = "delete performance_counter: 7750080" })
+--- 260000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 7993310" })
+(variant { Ok = "execute performance_counter: 7369134" })
+(variant { Ok = "count performance_counter: 288044225" })
+(variant { Ok = "insert performance_counter: 6559650" })
+(variant { Ok = "query_by_id performance_counter: 617915" })
+(variant { Ok = "query_by_name performance_counter: 661735" })
+(variant { Ok = "query_by_like_name performance_counter: 4284259057" })
+(variant { Ok = "query_by_limit_offset performance_counter: 1078021663" })
+(variant { Ok = "update_by_name performance_counter: 577139" })
+(variant { Ok = "update_by_id performance_counter: 7913246" })
+(variant { Ok = "delete performance_counter: 10996028" })
+--- 270000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8665661" })
+(variant { Ok = "execute performance_counter: 7381015" })
+(variant { Ok = "count performance_counter: 300891784" })
+(variant { Ok = "insert performance_counter: 7306985" })
+(variant { Ok = "query_by_id performance_counter: 619669" })
+(variant { Ok = "query_by_name performance_counter: 663970" })
+(variant { Ok = "query_by_like_name performance_counter: 4449217843" })
+(variant { Ok = "query_by_limit_offset performance_counter: 1120078639" })
+(variant { Ok = "update_by_name performance_counter: 578584" })
+(variant { Ok = "update_by_id performance_counter: 8462326" })
+(variant { Ok = "delete performance_counter: 7195491" })
+--- 280000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8290562" })
+(variant { Ok = "execute performance_counter: 7591660" })
+(variant { Ok = "count performance_counter: 313213530" })
+(variant { Ok = "insert performance_counter: 6658920" })
+(variant { Ok = "query_by_id performance_counter: 620232" })
+(variant { Ok = "query_by_name performance_counter: 664575" })
+(variant { Ok = "query_by_like_name performance_counter: 4617330655" })
+(variant { Ok = "query_by_limit_offset performance_counter: 1162134258" })
+(variant { Ok = "update_by_name performance_counter: 579238" })
+(variant { Ok = "update_by_id performance_counter: 7995441" })
+(variant { Ok = "delete performance_counter: 12805308" })
+--- 290000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8601523" })
+(variant { Ok = "execute performance_counter: 8794872" })
+(variant { Ok = "count performance_counter: 328437381" })
+(variant { Ok = "insert performance_counter: 8017903" })
+(variant { Ok = "query_by_id performance_counter: 620054" })
+(variant { Ok = "query_by_name performance_counter: 664030" })
+(variant { Ok = "query_by_like_name performance_counter: 4784343595" })
+(variant { Ok = "query_by_limit_offset performance_counter: 1204993990" })
+(variant { Ok = "update_by_name performance_counter: 578798" })
+(variant { Ok = "update_by_id performance_counter: 9250131" })
+(variant { Ok = "delete performance_counter: 7905378" })
+--- 300000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8320821" })
+(variant { Ok = "execute performance_counter: 8166902" })
+(variant { Ok = "count performance_counter: 340682870" })
+(variant { Ok = "insert performance_counter: 7940370" })
+(variant { Ok = "query_by_id performance_counter: 622532" })
+(variant { Ok = "query_by_name performance_counter: 666566" })
+(variant { Ok = "query_by_like_name performance_counter: 4950347296" })
+(variant { Ok = "query_by_limit_offset performance_counter: 1246504771" })
+(variant { Ok = "update_by_name performance_counter: 581676" })
+(variant { Ok = "update_by_id performance_counter: 9373056" })
+(variant { Ok = "delete performance_counter: 11547999" })
+--- 310000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8544397" })
+(variant { Ok = "execute performance_counter: 7999415" })
+(variant { Ok = "count performance_counter: 350986228" })
+(variant { Ok = "insert performance_counter: 7412063" })
+(variant { Ok = "query_by_id performance_counter: 618870" })
+(variant { Ok = "query_by_name performance_counter: 663375" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1286261970" })
+(variant { Ok = "update_by_name performance_counter: 578063" })
+(variant { Ok = "update_by_id performance_counter: 8689945" })
+(variant { Ok = "delete performance_counter: 7260849" })
+--- 320000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 10623497" })
+(variant { Ok = "execute performance_counter: 9288919" })
+(variant { Ok = "count performance_counter: 365588257" })
+(variant { Ok = "insert performance_counter: 9165794" })
+(variant { Ok = "query_by_id performance_counter: 618962" })
+(variant { Ok = "query_by_name performance_counter: 663613" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1328449018" })
+(variant { Ok = "update_by_name performance_counter: 578350" })
+(variant { Ok = "update_by_id performance_counter: 10416789" })
+(variant { Ok = "delete performance_counter: 12812689" })
+--- 330000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 7906621" })
+(variant { Ok = "execute performance_counter: 7269483" })
+(variant { Ok = "count performance_counter: 377185681" })
+(variant { Ok = "insert performance_counter: 6892411" })
+(variant { Ok = "query_by_id performance_counter: 623301" })
+(variant { Ok = "query_by_name performance_counter: 666985" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1372890320" })
+(variant { Ok = "update_by_name performance_counter: 581699" })
+(variant { Ok = "update_by_id performance_counter: 8281506" })
+(variant { Ok = "delete performance_counter: 6679247" })
+--- 340000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 10013351" })
+(variant { Ok = "execute performance_counter: 8704936" })
+(variant { Ok = "count performance_counter: 389510877" })
+(variant { Ok = "insert performance_counter: 7789433" })
+(variant { Ok = "query_by_id performance_counter: 621271" })
+(variant { Ok = "query_by_name performance_counter: 665950" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1414460960" })
+(variant { Ok = "update_by_name performance_counter: 580510" })
+(variant { Ok = "update_by_id performance_counter: 9005346" })
+(variant { Ok = "delete performance_counter: 11331101" })
+--- 350000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9359589" })
+(variant { Ok = "execute performance_counter: 10531695" })
+(variant { Ok = "count performance_counter: 405568673" })
+(variant { Ok = "insert performance_counter: 8118330" })
+(variant { Ok = "query_by_id performance_counter: 623452" })
+(variant { Ok = "query_by_name performance_counter: 667634" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1457145319" })
+(variant { Ok = "update_by_name performance_counter: 582414" })
+(variant { Ok = "update_by_id performance_counter: 9281268" })
+(variant { Ok = "delete performance_counter: 7995595" })
+--- 360000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9246802" })
+(variant { Ok = "execute performance_counter: 8504418" })
+(variant { Ok = "count performance_counter: 404030931" })
+(variant { Ok = "insert performance_counter: 7188132" })
+(variant { Ok = "query_by_id performance_counter: 627078" })
+(variant { Ok = "query_by_name performance_counter: 671076" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1497123729" })
+(variant { Ok = "update_by_name performance_counter: 586527" })
+(variant { Ok = "update_by_id performance_counter: 8441254" })
+(variant { Ok = "delete performance_counter: 11276451" })
+--- 370000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 7963673" })
+(variant { Ok = "execute performance_counter: 8238166" })
+(variant { Ok = "count performance_counter: 417589179" })
+(variant { Ok = "insert performance_counter: 7285031" })
+(variant { Ok = "query_by_id performance_counter: 625475" })
+(variant { Ok = "query_by_name performance_counter: 668927" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1536881120" })
+(variant { Ok = "update_by_name performance_counter: 584171" })
+(variant { Ok = "update_by_id performance_counter: 8504290" })
+(variant { Ok = "delete performance_counter: 7123970" })
+--- 380000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 7639504" })
+(variant { Ok = "execute performance_counter: 7507317" })
+(variant { Ok = "count performance_counter: 425900822" })
+(variant { Ok = "insert performance_counter: 7063148" })
+(variant { Ok = "query_by_id performance_counter: 626282" })
+(variant { Ok = "query_by_name performance_counter: 670033" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1579274447" })
+(variant { Ok = "update_by_name performance_counter: 584760" })
+(variant { Ok = "update_by_id performance_counter: 8538483" })
+(variant { Ok = "delete performance_counter: 10736073" })
+--- 390000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8586167" })
+(variant { Ok = "execute performance_counter: 7910784" })
+(variant { Ok = "count performance_counter: 440741094" })
+(variant { Ok = "insert performance_counter: 6713035" })
+(variant { Ok = "query_by_id performance_counter: 625274" })
+(variant { Ok = "query_by_name performance_counter: 669520" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1620611914" })
+(variant { Ok = "update_by_name performance_counter: 583980" })
+(variant { Ok = "update_by_id performance_counter: 8048712" })
+(variant { Ok = "delete performance_counter: 6574551" })
+--- 400000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8884643" })
+(variant { Ok = "execute performance_counter: 9125307" })
+(variant { Ok = "count performance_counter: 454396871" })
+(variant { Ok = "insert performance_counter: 8073458" })
+(variant { Ok = "query_by_id performance_counter: 627069" })
+(variant { Ok = "query_by_name performance_counter: 670937" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1663164789" })
+(variant { Ok = "update_by_name performance_counter: 586064" })
+(variant { Ok = "update_by_id performance_counter: 9302119" })
+(variant { Ok = "delete performance_counter: 11731153" })
+--- 410000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8979396" })
+(variant { Ok = "execute performance_counter: 8288589" })
+(variant { Ok = "count performance_counter: 469680868" })
+(variant { Ok = "insert performance_counter: 7764526" })
+(variant { Ok = "query_by_id performance_counter: 628853" })
+(variant { Ok = "query_by_name performance_counter: 673945" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1705666637" })
+(variant { Ok = "update_by_name performance_counter: 588327" })
+(variant { Ok = "update_by_id performance_counter: 9132975" })
+(variant { Ok = "delete performance_counter: 7521151" })
+--- 420000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8859659" })
+(variant { Ok = "execute performance_counter: 8347975" })
+(variant { Ok = "count performance_counter: 477567038" })
+(variant { Ok = "insert performance_counter: 7508775" })
+(variant { Ok = "query_by_id performance_counter: 627015" })
+(variant { Ok = "query_by_name performance_counter: 671835" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1746909269" })
+(variant { Ok = "update_by_name performance_counter: 586385" })
+(variant { Ok = "update_by_id performance_counter: 8862467" })
+(variant { Ok = "delete performance_counter: 11350179" })
+--- 430000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9280699" })
+(variant { Ok = "execute performance_counter: 8515198" })
+(variant { Ok = "count performance_counter: 494365877" })
+(variant { Ok = "insert performance_counter: 12708078" })
+(variant { Ok = "query_by_id performance_counter: 629171" })
+(variant { Ok = "query_by_name performance_counter: 673236" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1787518985" })
+(variant { Ok = "update_by_name performance_counter: 587711" })
+(variant { Ok = "update_by_id performance_counter: 9365593" })
+(variant { Ok = "delete performance_counter: 7722305" })
+--- 440000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9021306" })
+(variant { Ok = "execute performance_counter: 10344919" })
+(variant { Ok = "count performance_counter: 502718030" })
+(variant { Ok = "insert performance_counter: 6709194" })
+(variant { Ok = "query_by_id performance_counter: 628227" })
+(variant { Ok = "query_by_name performance_counter: 673321" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1828301493" })
+(variant { Ok = "update_by_name performance_counter: 587800" })
+(variant { Ok = "update_by_id performance_counter: 8097846" })
+(variant { Ok = "delete performance_counter: 11002651" })
+--- 450000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8744006" })
+(variant { Ok = "execute performance_counter: 9054218" })
+(variant { Ok = "count performance_counter: 518596722" })
+(variant { Ok = "insert performance_counter: 7902195" })
+(variant { Ok = "query_by_id performance_counter: 629966" })
+(variant { Ok = "query_by_name performance_counter: 674197" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1871838001" })
+(variant { Ok = "update_by_name performance_counter: 589446" })
+(variant { Ok = "update_by_id performance_counter: 9106898" })
+(variant { Ok = "delete performance_counter: 7807242" })
+--- 460000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8989553" })
+(variant { Ok = "execute performance_counter: 8275510" })
+(variant { Ok = "count performance_counter: 533653862" })
+(variant { Ok = "insert performance_counter: 7622934" })
+(variant { Ok = "query_by_id performance_counter: 627521" })
+(variant { Ok = "query_by_name performance_counter: 671924" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1911117425" })
+(variant { Ok = "update_by_name performance_counter: 587144" })
+(variant { Ok = "update_by_id performance_counter: 9039138" })
+(variant { Ok = "delete performance_counter: 11705216" })
+--- 470000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9541521" })
+(variant { Ok = "execute performance_counter: 8803753" })
+(variant { Ok = "count performance_counter: 533596335" })
+(variant { Ok = "insert performance_counter: 7244295" })
+(variant { Ok = "query_by_id performance_counter: 633519" })
+(variant { Ok = "query_by_name performance_counter: 677125" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1958095571" })
+(variant { Ok = "update_by_name performance_counter: 592573" })
+(variant { Ok = "update_by_id performance_counter: 8561811" })
+(variant { Ok = "delete performance_counter: 7159752" })
+--- 480000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8093456" })
+(variant { Ok = "execute performance_counter: 7954082" })
+(variant { Ok = "count performance_counter: 545766537" })
+(variant { Ok = "insert performance_counter: 7353428" })
+(variant { Ok = "query_by_id performance_counter: 633074" })
+(variant { Ok = "query_by_name performance_counter: 677178" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 1999485277" })
+(variant { Ok = "update_by_name performance_counter: 592186" })
+(variant { Ok = "update_by_id performance_counter: 8541290" })
+(variant { Ok = "delete performance_counter: 10838308" })
+--- 490000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 10441379" })
+(variant { Ok = "execute performance_counter: 7828740" })
+(variant { Ok = "count performance_counter: 559517239" })
+(variant { Ok = "insert performance_counter: 7137273" })
+(variant { Ok = "query_by_id performance_counter: 632060" })
+(variant { Ok = "query_by_name performance_counter: 675742" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2039545565" })
+(variant { Ok = "update_by_name performance_counter: 591556" })
+(variant { Ok = "update_by_id performance_counter: 8642945" })
+(variant { Ok = "delete performance_counter: 6857526" })
+--- 500000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9112885" })
+(variant { Ok = "execute performance_counter: 8611362" })
+(variant { Ok = "count performance_counter: 570086449" })
+(variant { Ok = "insert performance_counter: 7670424" })
+(variant { Ok = "query_by_id performance_counter: 632443" })
+(variant { Ok = "query_by_name performance_counter: 675885" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2080212561" })
+(variant { Ok = "update_by_name performance_counter: 591231" })
+(variant { Ok = "update_by_id performance_counter: 8991605" })
+(variant { Ok = "delete performance_counter: 11475145" })
+--- 510000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9062255" })
+(variant { Ok = "execute performance_counter: 11459473" })
+(variant { Ok = "count performance_counter: 585631100" })
+(variant { Ok = "insert performance_counter: 8160401" })
+(variant { Ok = "query_by_id performance_counter: 635517" })
+(variant { Ok = "query_by_name performance_counter: 679392" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2125197201" })
+(variant { Ok = "update_by_name performance_counter: 594694" })
+(variant { Ok = "update_by_id performance_counter: 9352498" })
+(variant { Ok = "delete performance_counter: 8048474" })
+--- 520000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9617699" })
+(variant { Ok = "execute performance_counter: 11421376" })
+(variant { Ok = "count performance_counter: 598004631" })
+(variant { Ok = "insert performance_counter: 7506318" })
+(variant { Ok = "query_by_id performance_counter: 635627" })
+(variant { Ok = "query_by_name performance_counter: 679644" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2166642737" })
+(variant { Ok = "update_by_name performance_counter: 594643" })
+(variant { Ok = "update_by_id performance_counter: 8840566" })
+(variant { Ok = "delete performance_counter: 11896560" })
+--- 530000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 11952178" })
+(variant { Ok = "execute performance_counter: 9031720" })
+(variant { Ok = "count performance_counter: 612048629" })
+(variant { Ok = "insert performance_counter: 11423809" })
+(variant { Ok = "query_by_id performance_counter: 636272" })
+(variant { Ok = "query_by_name performance_counter: 680360" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2209505307" })
+(variant { Ok = "update_by_name performance_counter: 595807" })
+(variant { Ok = "update_by_id performance_counter: 8838588" })
+(variant { Ok = "delete performance_counter: 7441172" })
+--- 540000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9180012" })
+(variant { Ok = "execute performance_counter: 9052297" })
+(variant { Ok = "count performance_counter: 628439551" })
+(variant { Ok = "insert performance_counter: 8243914" })
+(variant { Ok = "query_by_id performance_counter: 638053" })
+(variant { Ok = "query_by_name performance_counter: 682610" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2250659139" })
+(variant { Ok = "update_by_name performance_counter: 597802" })
+(variant { Ok = "update_by_id performance_counter: 10545305" })
+(variant { Ok = "delete performance_counter: 12780162" })
+--- 550000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9369008" })
+(variant { Ok = "execute performance_counter: 8262542" })
+(variant { Ok = "count performance_counter: 636494976" })
+(variant { Ok = "insert performance_counter: 6714529" })
+(variant { Ok = "query_by_id performance_counter: 636768" })
+(variant { Ok = "query_by_name performance_counter: 680612" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2292109391" })
+(variant { Ok = "update_by_name performance_counter: 595837" })
+(variant { Ok = "update_by_id performance_counter: 8056897" })
+(variant { Ok = "delete performance_counter: 6597764" })
+--- 560000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8958931" })
+(variant { Ok = "execute performance_counter: 8835252" })
+(variant { Ok = "count performance_counter: 650659336" })
+(variant { Ok = "insert performance_counter: 8060855" })
+(variant { Ok = "query_by_id performance_counter: 637501" })
+(variant { Ok = "query_by_name performance_counter: 681131" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2333529718" })
+(variant { Ok = "update_by_name performance_counter: 596596" })
+(variant { Ok = "update_by_id performance_counter: 9268781" })
+(variant { Ok = "delete performance_counter: 11542641" })
+--- 570000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9314227" })
+(variant { Ok = "execute performance_counter: 8644835" })
+(variant { Ok = "count performance_counter: 664238019" })
+(variant { Ok = "insert performance_counter: 7765897" })
+(variant { Ok = "query_by_id performance_counter: 639735" })
+(variant { Ok = "query_by_name performance_counter: 683683" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2377243251" })
+(variant { Ok = "update_by_name performance_counter: 599239" })
+(variant { Ok = "update_by_id performance_counter: 9192793" })
+(variant { Ok = "delete performance_counter: 7537528" })
+--- 580000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9345974" })
+(variant { Ok = "execute performance_counter: 9557905" })
+(variant { Ok = "count performance_counter: 671492109" })
+(variant { Ok = "insert performance_counter: 8258310" })
+(variant { Ok = "query_by_id performance_counter: 643232" })
+(variant { Ok = "query_by_name performance_counter: 687049" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2421378191" })
+(variant { Ok = "update_by_name performance_counter: 602116" })
+(variant { Ok = "update_by_id performance_counter: 9559368" })
+(variant { Ok = "delete performance_counter: 11996256" })
+--- 590000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8455321" })
+(variant { Ok = "execute performance_counter: 8295923" })
+(variant { Ok = "count performance_counter: 680588485" })
+(variant { Ok = "insert performance_counter: 7521000" })
+(variant { Ok = "query_by_id performance_counter: 642132" })
+(variant { Ok = "query_by_name performance_counter: 687310" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2465489545" })
+(variant { Ok = "update_by_name performance_counter: 601154" })
+(variant { Ok = "update_by_id performance_counter: 8657345" })
+(variant { Ok = "delete performance_counter: 7350839" })
+--- 600000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9008168" })
+(variant { Ok = "execute performance_counter: 8346378" })
+(variant { Ok = "count performance_counter: 697169476" })
+(variant { Ok = "insert performance_counter: 11331008" })
+(variant { Ok = "query_by_id performance_counter: 641888" })
+(variant { Ok = "query_by_name performance_counter: 686052" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2505404182" })
+(variant { Ok = "update_by_name performance_counter: 600621" })
+(variant { Ok = "update_by_id performance_counter: 8071955" })
+(variant { Ok = "delete performance_counter: 11202651" })
+--- 610000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9491379" })
+(variant { Ok = "execute performance_counter: 8951762" })
+(variant { Ok = "count performance_counter: 708641941" })
+(variant { Ok = "insert performance_counter: 7689891" })
+(variant { Ok = "query_by_id performance_counter: 645180" })
+(variant { Ok = "query_by_name performance_counter: 689326" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2548692768" })
+(variant { Ok = "update_by_name performance_counter: 604363" })
+(variant { Ok = "update_by_id performance_counter: 9033515" })
+(variant { Ok = "delete performance_counter: 7569566" })
+--- 620000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 11697959" })
+(variant { Ok = "execute performance_counter: 9084976" })
+(variant { Ok = "count performance_counter: 722845057" })
+(variant { Ok = "insert performance_counter: 8122538" })
+(variant { Ok = "query_by_id performance_counter: 644329" })
+(variant { Ok = "query_by_name performance_counter: 689179" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2591315465" })
+(variant { Ok = "update_by_name performance_counter: 603510" })
+(variant { Ok = "update_by_id performance_counter: 9439916" })
+(variant { Ok = "delete performance_counter: 11733319" })
+--- 630000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 10178876" })
+(variant { Ok = "execute performance_counter: 9620080" })
+(variant { Ok = "count performance_counter: 733248021" })
+(variant { Ok = "insert performance_counter: 8263078" })
+(variant { Ok = "query_by_id performance_counter: 644655" })
+(variant { Ok = "query_by_name performance_counter: 689720" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2631941856" })
+(variant { Ok = "update_by_name performance_counter: 603366" })
+(variant { Ok = "update_by_id performance_counter: 9563774" })
+(variant { Ok = "delete performance_counter: 8164226" })
+--- 640000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8833836" })
+(variant { Ok = "execute performance_counter: 9181678" })
+(variant { Ok = "count performance_counter: 749453504" })
+(variant { Ok = "insert performance_counter: 7650982" })
+(variant { Ok = "query_by_id performance_counter: 646174" })
+(variant { Ok = "query_by_name performance_counter: 690618" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2673779891" })
+(variant { Ok = "update_by_name performance_counter: 605619" })
+(variant { Ok = "update_by_id performance_counter: 8925046" })
+(variant { Ok = "delete performance_counter: 11414777" })
+--- 650000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9472578" })
+(variant { Ok = "execute performance_counter: 9342138" })
+(variant { Ok = "count performance_counter: 762307297" })
+(variant { Ok = "insert performance_counter: 8345280" })
+(variant { Ok = "query_by_id performance_counter: 645864" })
+(variant { Ok = "query_by_name performance_counter: 690023" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2717326298" })
+(variant { Ok = "update_by_name performance_counter: 604547" })
+(variant { Ok = "update_by_id performance_counter: 10653741" })
+(variant { Ok = "delete performance_counter: 8071710" })
+--- 660000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 12429157" })
+(variant { Ok = "execute performance_counter: 9334072" })
+(variant { Ok = "count performance_counter: 771957708" })
+(variant { Ok = "insert performance_counter: 7424451" })
+(variant { Ok = "query_by_id performance_counter: 645057" })
+(variant { Ok = "query_by_name performance_counter: 689211" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2756735285" })
+(variant { Ok = "update_by_name performance_counter: 603604" })
+(variant { Ok = "update_by_id performance_counter: 8771623" })
+(variant { Ok = "delete performance_counter: 11392564" })
+--- 670000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9321462" })
+(variant { Ok = "execute performance_counter: 9200958" })
+(variant { Ok = "count performance_counter: 795523672" })
+(variant { Ok = "insert performance_counter: 8209854" })
+(variant { Ok = "query_by_id performance_counter: 646653" })
+(variant { Ok = "query_by_name performance_counter: 690941" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2800369830" })
+(variant { Ok = "update_by_name performance_counter: 605241" })
+(variant { Ok = "update_by_id performance_counter: 9388669" })
+(variant { Ok = "delete performance_counter: 8110406" })
+--- 680000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 12213346" })
+(variant { Ok = "execute performance_counter: 9000670" })
+(variant { Ok = "count performance_counter: 804356927" })
+(variant { Ok = "insert performance_counter: 7837378" })
+(variant { Ok = "query_by_id performance_counter: 646900" })
+(variant { Ok = "query_by_name performance_counter: 691448" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2840281788" })
+(variant { Ok = "update_by_name performance_counter: 606266" })
+(variant { Ok = "update_by_id performance_counter: 9262192" })
+(variant { Ok = "delete performance_counter: 11912621" })
+--- 690000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 13075294" })
+(variant { Ok = "execute performance_counter: 9882263" })
+(variant { Ok = "count performance_counter: 804051272" })
+(variant { Ok = "insert performance_counter: 12136991" })
+(variant { Ok = "query_by_id performance_counter: 648131" })
+(variant { Ok = "query_by_name performance_counter: 692598" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2887326781" })
+(variant { Ok = "update_by_name performance_counter: 607132" })
+(variant { Ok = "update_by_id performance_counter: 9583731" })
+(variant { Ok = "delete performance_counter: 8208850" })
+--- 700000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8578976" })
+(variant { Ok = "execute performance_counter: 8429999" })
+(variant { Ok = "count performance_counter: 817695601" })
+(variant { Ok = "insert performance_counter: 7256876" })
+(variant { Ok = "query_by_id performance_counter: 649631" })
+(variant { Ok = "query_by_name performance_counter: 693961" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2929090090" })
+(variant { Ok = "update_by_name performance_counter: 608981" })
+(variant { Ok = "update_by_id performance_counter: 8688653" })
+(variant { Ok = "delete performance_counter: 10961318" })
+--- 710000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9324479" })
+(variant { Ok = "execute performance_counter: 8682311" })
+(variant { Ok = "count performance_counter: 831056419" })
+(variant { Ok = "insert performance_counter: 6709667" })
+(variant { Ok = "query_by_id performance_counter: 650344" })
+(variant { Ok = "query_by_name performance_counter: 695321" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 2970455354" })
+(variant { Ok = "update_by_name performance_counter: 609476" })
+(variant { Ok = "update_by_id performance_counter: 8067505" })
+(variant { Ok = "delete performance_counter: 6599130" })
+--- 720000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9817661" })
+(variant { Ok = "execute performance_counter: 9262631" })
+(variant { Ok = "count performance_counter: 844825898" })
+(variant { Ok = "insert performance_counter: 7809175" })
+(variant { Ok = "query_by_id performance_counter: 650819" })
+(variant { Ok = "query_by_name performance_counter: 694883" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3011103106" })
+(variant { Ok = "update_by_name performance_counter: 610233" })
+(variant { Ok = "update_by_id performance_counter: 9153925" })
+(variant { Ok = "delete performance_counter: 11744407" })
+--- 730000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9529400" })
+(variant { Ok = "execute performance_counter: 9402337" })
+(variant { Ok = "count performance_counter: 860936298" })
+(variant { Ok = "insert performance_counter: 8163345" })
+(variant { Ok = "query_by_id performance_counter: 650702" })
+(variant { Ok = "query_by_name performance_counter: 694627" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3050896476" })
+(variant { Ok = "update_by_name performance_counter: 609420" })
+(variant { Ok = "update_by_id performance_counter: 9549894" })
+(variant { Ok = "delete performance_counter: 7926231" })
+--- 740000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 10272238" })
+(variant { Ok = "execute performance_counter: 9656159" })
+(variant { Ok = "count performance_counter: 871313369" })
+(variant { Ok = "insert performance_counter: 7624259" })
+(variant { Ok = "query_by_id performance_counter: 651693" })
+(variant { Ok = "query_by_name performance_counter: 696676" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3094676955" })
+(variant { Ok = "update_by_name performance_counter: 611152" })
+(variant { Ok = "update_by_id performance_counter: 9028048" })
+(variant { Ok = "delete performance_counter: 12152186" })
+--- 750000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9016828" })
+(variant { Ok = "execute performance_counter: 8868191" })
+(variant { Ok = "count performance_counter: 884827213" })
+(variant { Ok = "insert performance_counter: 7791394" })
+(variant { Ok = "query_by_id performance_counter: 653853" })
+(variant { Ok = "query_by_name performance_counter: 698381" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3141754940" })
+(variant { Ok = "update_by_name performance_counter: 612550" })
+(variant { Ok = "update_by_id performance_counter: 9024838" })
+(variant { Ok = "delete performance_counter: 7676721" })
+--- 760000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9817240" })
+(variant { Ok = "execute performance_counter: 9686405" })
+(variant { Ok = "count performance_counter: 903200244" })
+(variant { Ok = "insert performance_counter: 8417426" })
+(variant { Ok = "query_by_id performance_counter: 653348" })
+(variant { Ok = "query_by_name performance_counter: 697969" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3182024642" })
+(variant { Ok = "update_by_name performance_counter: 611954" })
+(variant { Ok = "update_by_id performance_counter: 10732049" })
+(variant { Ok = "delete performance_counter: 13018816" })
+--- 770000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9955620" })
+(variant { Ok = "execute performance_counter: 8876587" })
+(variant { Ok = "count performance_counter: 912551323" })
+(variant { Ok = "insert performance_counter: 6843263" })
+(variant { Ok = "query_by_id performance_counter: 653802" })
+(variant { Ok = "query_by_name performance_counter: 697996" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3223870604" })
+(variant { Ok = "update_by_name performance_counter: 612478" })
+(variant { Ok = "update_by_id performance_counter: 8236189" })
+(variant { Ok = "delete performance_counter: 6728587" })
+--- 780000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9818334" })
+(variant { Ok = "execute performance_counter: 12285142" })
+(variant { Ok = "count performance_counter: 927214904" })
+(variant { Ok = "insert performance_counter: 8237852" })
+(variant { Ok = "query_by_id performance_counter: 655231" })
+(variant { Ok = "query_by_name performance_counter: 699873" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3264664319" })
+(variant { Ok = "update_by_name performance_counter: 614098" })
+(variant { Ok = "update_by_id performance_counter: 9509874" })
+(variant { Ok = "delete performance_counter: 11971307" })
+--- 790000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 10081482" })
+(variant { Ok = "execute performance_counter: 9356639" })
+(variant { Ok = "count performance_counter: 941246527" })
+(variant { Ok = "insert performance_counter: 7984543" })
+(variant { Ok = "query_by_id performance_counter: 656624" })
+(variant { Ok = "query_by_name performance_counter: 701574" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3306865275" })
+(variant { Ok = "update_by_name performance_counter: 615876" })
+(variant { Ok = "update_by_id performance_counter: 9420710" })
+(variant { Ok = "delete performance_counter: 7762149" })
+--- 800000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 10514572" })
+(variant { Ok = "execute performance_counter: 9760178" })
+(variant { Ok = "count performance_counter: 948156290" })
+(variant { Ok = "insert performance_counter: 7484412" })
+(variant { Ok = "query_by_id performance_counter: 658491" })
+(variant { Ok = "query_by_name performance_counter: 702975" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3353680555" })
+(variant { Ok = "update_by_name performance_counter: 617799" })
+(variant { Ok = "update_by_id performance_counter: 8815550" })
+(variant { Ok = "delete performance_counter: 11710624" })
+--- 810000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 8893773" })
+(variant { Ok = "execute performance_counter: 8734239" })
+(variant { Ok = "count performance_counter: 955877183" })
+(variant { Ok = "insert performance_counter: 7343902" })
+(variant { Ok = "query_by_id performance_counter: 658703" })
+(variant { Ok = "query_by_name performance_counter: 703146" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3395175418" })
+(variant { Ok = "update_by_name performance_counter: 617000" })
+(variant { Ok = "update_by_id performance_counter: 8775968" })
+(variant { Ok = "delete performance_counter: 7106948" })
+--- 820000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 11982296" })
+(variant { Ok = "execute performance_counter: 8985920" })
+(variant { Ok = "count performance_counter: 974054288" })
+(variant { Ok = "insert performance_counter: 6800731" })
+(variant { Ok = "query_by_id performance_counter: 659788" })
+(variant { Ok = "query_by_name performance_counter: 704366" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3437541072" })
+(variant { Ok = "update_by_name performance_counter: 619484" })
+(variant { Ok = "update_by_id performance_counter: 8172057" })
+(variant { Ok = "delete performance_counter: 11438323" })
+--- 830000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9269203" })
+(variant { Ok = "execute performance_counter: 9076455" })
+(variant { Ok = "count performance_counter: 982460240" })
+(variant { Ok = "insert performance_counter: 7923020" })
+(variant { Ok = "query_by_id performance_counter: 658591" })
+(variant { Ok = "query_by_name performance_counter: 702257" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3477254608" })
+(variant { Ok = "update_by_name performance_counter: 617339" })
+(variant { Ok = "update_by_id performance_counter: 9164068" })
+(variant { Ok = "delete performance_counter: 7792003" })
+--- 840000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 12798041" })
+(variant { Ok = "execute performance_counter: 9484631" })
+(variant { Ok = "count performance_counter: 996769703" })
+(variant { Ok = "insert performance_counter: 7890646" })
+(variant { Ok = "query_by_id performance_counter: 659144" })
+(variant { Ok = "query_by_name performance_counter: 703632" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3520255106" })
+(variant { Ok = "update_by_name performance_counter: 618019" })
+(variant { Ok = "update_by_id performance_counter: 9281144" })
+(variant { Ok = "delete performance_counter: 11821054" })
+--- 850000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 13336387" })
+(variant { Ok = "execute performance_counter: 9662763" })
+(variant { Ok = "count performance_counter: 1009828830" })
+(variant { Ok = "insert performance_counter: 7951359" })
+(variant { Ok = "query_by_id performance_counter: 662088" })
+(variant { Ok = "query_by_name performance_counter: 706651" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3564580433" })
+(variant { Ok = "update_by_name performance_counter: 621784" })
+(variant { Ok = "update_by_id performance_counter: 9356815" })
+(variant { Ok = "delete performance_counter: 7813426" })
+--- 860000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9489283" })
+(variant { Ok = "execute performance_counter: 9829221" })
+(variant { Ok = "count performance_counter: 1022921414" })
+(variant { Ok = "insert performance_counter: 11849380" })
+(variant { Ok = "query_by_id performance_counter: 659042" })
+(variant { Ok = "query_by_name performance_counter: 703178" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3604600187" })
+(variant { Ok = "update_by_name performance_counter: 618104" })
+(variant { Ok = "update_by_id performance_counter: 9065087" })
+(variant { Ok = "delete performance_counter: 11663220" })
+--- 870000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 10132884" })
+(variant { Ok = "execute performance_counter: 10004787" })
+(variant { Ok = "count performance_counter: 1041892173" })
+(variant { Ok = "insert performance_counter: 8447499" })
+(variant { Ok = "query_by_id performance_counter: 662484" })
+(variant { Ok = "query_by_name performance_counter: 705920" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3648130020" })
+(variant { Ok = "update_by_name performance_counter: 621644" })
+(variant { Ok = "update_by_id performance_counter: 10793381" })
+(variant { Ok = "delete performance_counter: 8223128" })
+--- 880000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 10966971" })
+(variant { Ok = "execute performance_counter: 9983838" })
+(variant { Ok = "count performance_counter: 1048609755" })
+(variant { Ok = "insert performance_counter: 7579055" })
+(variant { Ok = "query_by_id performance_counter: 662506" })
+(variant { Ok = "query_by_name performance_counter: 707352" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3688256982" })
+(variant { Ok = "update_by_name performance_counter: 621769" })
+(variant { Ok = "update_by_id performance_counter: 8917251" })
+(variant { Ok = "delete performance_counter: 11524741" })
+--- 890000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9867788" })
+(variant { Ok = "execute performance_counter: 9712253" })
+(variant { Ok = "count performance_counter: 1067685901" })
+(variant { Ok = "insert performance_counter: 8123041" })
+(variant { Ok = "query_by_id performance_counter: 661299" })
+(variant { Ok = "query_by_name performance_counter: 706524" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3729555392" })
+(variant { Ok = "update_by_name performance_counter: 620420" })
+(variant { Ok = "update_by_id performance_counter: 9575495" })
+(variant { Ok = "delete performance_counter: 7883272" })
+--- 900000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 10824858" })
+(variant { Ok = "execute performance_counter: 10110391" })
+(variant { Ok = "count performance_counter: 1081295746" })
+(variant { Ok = "insert performance_counter: 7805460" })
+(variant { Ok = "query_by_id performance_counter: 663569" })
+(variant { Ok = "query_by_name performance_counter: 708576" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3773130112" })
+(variant { Ok = "update_by_name performance_counter: 622775" })
+(variant { Ok = "update_by_id performance_counter: 9227558" })
+(variant { Ok = "delete performance_counter: 12518784" })
+--- 910000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9371029" })
+(variant { Ok = "execute performance_counter: 9207854" })
+(variant { Ok = "count performance_counter: 1090740683" })
+(variant { Ok = "insert performance_counter: 12157033" })
+(variant { Ok = "query_by_id performance_counter: 665338" })
+(variant { Ok = "query_by_name performance_counter: 710812" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3821786935" })
+(variant { Ok = "update_by_name performance_counter: 624501" })
+(variant { Ok = "update_by_id performance_counter: 9699570" })
+(variant { Ok = "delete performance_counter: 8406229" })
+--- 920000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9378583" })
+(variant { Ok = "execute performance_counter: 9241466" })
+(variant { Ok = "count performance_counter: 1101750420" })
+(variant { Ok = "insert performance_counter: 7648914" })
+(variant { Ok = "query_by_id performance_counter: 666321" })
+(variant { Ok = "query_by_name performance_counter: 710775" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3863384526" })
+(variant { Ok = "update_by_name performance_counter: 625284" })
+(variant { Ok = "update_by_id performance_counter: 8856886" })
+(variant { Ok = "delete performance_counter: 11235225" })
+--- 930000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9942008" })
+(variant { Ok = "execute performance_counter: 9315015" })
+(variant { Ok = "count performance_counter: 1111166730" })
+(variant { Ok = "insert performance_counter: 6892641" })
+(variant { Ok = "query_by_id performance_counter: 666962" })
+(variant { Ok = "query_by_name performance_counter: 711803" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3904865192" })
+(variant { Ok = "update_by_name performance_counter: 626466" })
+(variant { Ok = "update_by_id performance_counter: 8269055" })
+(variant { Ok = "delete performance_counter: 6738995" })
+--- 940000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 12791171" })
+(variant { Ok = "execute performance_counter: 9413870" })
+(variant { Ok = "count performance_counter: 1129803112" })
+(variant { Ok = "insert performance_counter: 8007465" })
+(variant { Ok = "query_by_id performance_counter: 667262" })
+(variant { Ok = "query_by_name performance_counter: 712236" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3946175269" })
+(variant { Ok = "update_by_name performance_counter: 626817" })
+(variant { Ok = "update_by_id performance_counter: 9267980" })
+(variant { Ok = "delete performance_counter: 11742117" })
+--- 950000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 10650070" })
+(variant { Ok = "execute performance_counter: 9840500" })
+(variant { Ok = "count performance_counter: 1136103258" })
+(variant { Ok = "insert performance_counter: 7890568" })
+(variant { Ok = "query_by_id performance_counter: 668710" })
+(variant { Ok = "query_by_name performance_counter: 713001" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 3986974144" })
+(variant { Ok = "update_by_name performance_counter: 627746" })
+(variant { Ok = "update_by_id performance_counter: 9356657" })
+(variant { Ok = "delete performance_counter: 7832249" })
+--- 960000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 10574787" })
+(variant { Ok = "execute performance_counter: 10805247" })
+(variant { Ok = "count performance_counter: 1161057462" })
+(variant { Ok = "insert performance_counter: 8483249" })
+(variant { Ok = "query_by_id performance_counter: 667702" })
+(variant { Ok = "query_by_name performance_counter: 712913" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 4031209481" })
+(variant { Ok = "update_by_name performance_counter: 627402" })
+(variant { Ok = "update_by_id performance_counter: 9778409" })
+(variant { Ok = "delete performance_counter: 12244681" })
+--- 970000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 9814787" })
+(variant { Ok = "execute performance_counter: 9106656" })
+(variant { Ok = "count performance_counter: 1165779566" })
+(variant { Ok = "insert performance_counter: 7295335" })
+(variant { Ok = "query_by_id performance_counter: 666230" })
+(variant { Ok = "query_by_name performance_counter: 710790" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 4070016459" })
+(variant { Ok = "update_by_name performance_counter: 625254" })
+(variant { Ok = "update_by_id performance_counter: 8745388" })
+(variant { Ok = "delete performance_counter: 7072970" })
+--- 980000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 13675888" })
+(variant { Ok = "execute performance_counter: 10532482" })
+(variant { Ok = "count performance_counter: 1179090925" })
+(variant { Ok = "insert performance_counter: 8023564" })
+(variant { Ok = "query_by_id performance_counter: 667746" })
+(variant { Ok = "query_by_name performance_counter: 712168" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 4112435116" })
+(variant { Ok = "update_by_name performance_counter: 627248" })
+(variant { Ok = "update_by_id performance_counter: 9444970" })
+(variant { Ok = "delete performance_counter: 13395150" })
+--- 990000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 10723456" })
+(variant { Ok = "execute performance_counter: 10909900" })
+(variant { Ok = "count performance_counter: 1191466851" })
+(variant { Ok = "insert performance_counter: 8480986" })
+(variant { Ok = "query_by_id performance_counter: 668658" })
+(variant { Ok = "query_by_name performance_counter: 712752" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 4154228950" })
+(variant { Ok = "update_by_name performance_counter: 627511" })
+(variant { Ok = "update_by_id performance_counter: 9813480" })
+(variant { Ok = "delete performance_counter: 8363023" })
+--- 1000000 ---
+(variant { Ok = "bench1_insert_person OK" })
+(variant { Ok = "execute performance_counter: 12729153" })
+(variant { Ok = "execute performance_counter: 10064283" })
+(variant { Ok = "count performance_counter: 1202162092" })
+(variant { Ok = "insert performance_counter: 8038416" })
+(variant { Ok = "query_by_id performance_counter: 670688" })
+(variant { Ok = "query_by_name performance_counter: 716706" })
+[31mError: (B[mFailed update call.
+[33mCaused by: (B[mFailed update call.
+  The Replica returned an error: code 5, message: "Canister bkyz2-fmaaa-aaaaa-qaaaq-cai exceeded the instruction limit for single message execution."
+(variant { Ok = "query_by_limit_offset performance_counter: 4199163984" })
+(variant { Ok = "update_by_name performance_counter: 629879" })
+(variant { Ok = "update_by_id performance_counter: 9691163" })
+(variant { Ok = "delete performance_counter: 11996330" })

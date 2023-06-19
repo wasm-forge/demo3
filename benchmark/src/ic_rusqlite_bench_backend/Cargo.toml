@@ -9,11 +9,12 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-candid = "0.8"
+candid = "0.8.4"
 ic-cdk = "0.8.1"
 hex = "0.4.3"
 serde = "1.0.163"
 serde_json = "1.0"
 ic-cdk-timers = "0.2" # Feel free to remove this dependency if you don't need timers
-ic-wasi-polyfill = { git = "https://github.com/wasm-forge/ic-wasi-polyfill", rev = "d2faf36155c454d7c87272d953c1c2dc0b6bc1b6" }
+#ic-wasi-polyfill = { git = "https://github.com/wasm-forge/ic-wasi-polyfill", rev = "0e1319a2f4fa7ed359044c8a095c44c305c6acff", features = ["transient"]}
+ic-wasi-polyfill = { git = "https://github.com/wasm-forge/ic-wasi-polyfill", rev = "0e1319a2f4fa7ed359044c8a095c44c305c6acff"}
 rusqlite = { git = "https://github.com/rusqlite/rusqlite", version = "0.29.0", features = ["bundled", "wasm32-wasi-vfs"] }

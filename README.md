@@ -151,8 +151,10 @@ dfx canister call demo3_backend list
 
 ## Performance benchmarks for SQL commands
 
+
 The performance estimation was made similar to the one in the alternative [project](https://github.com/froghub-io/ic-sqlite/) implementing the sqlite in IC canister.
 
+### Performance based on the stable structures:
 
 | SQL <br/> commands               | performance counter <br/> 10K rows | performance counter <br/> 100K rows | performance counter <br/> 500K rows | performance counter <br/> 1M rows |
 |----------------------------------|------------------------------------------------|-------------------------------------------------|-------------------------------------------------|--------------------------------------------------|
@@ -167,5 +169,20 @@ The performance estimation was made similar to the one in the alternative [proje
 | update <br/> (where index filed) | 531129                                         | 558131                                          | 591241                                          | 629889                                           | 
 | delete <br/> (where primary key) | 10079160                                       | 8397133                                         | 11474854                                        | 11996039                                         |
 
+
+### Performance based on the transient storage:
+
+| SQL <br/> commands               | performance counter <br/> 10K rows | performance counter <br/> 100K rows | performance counter <br/> 500K rows | performance counter <br/> 1M rows |
+|----------------------------------|------------------------------------------------|-------------------------------------------------|-------------------------------------------------|--------------------------------------------------|
+| create table                     | 1355942                                        | 1590464                                         | 2701306                                         | 4254880                                          | 
+| create index <br/> (empty table) | 1063520                                        | 1297837                                         | 2455461                                         | 3686834                                          |
+| count                            | 243819                                         | 11838005                                        | 62710202                                        | 126003479                                        | 
+| insert                           | 662632                                         | 819774                                          | 822305                                          | 830358                                           | 
+| select <br/> (where primary key) | 293424                                         | 300705                                          | 320130                                          | 346628                                           | 
+| select <br/> (where index field) | 334820                                         | 343590                                          | 363634                                          | 392090                                           | 
+| select <br/> (where like field)  | 153135930                                      | 1541036699                                      | limit for single message execution              | limit for single message execution               | 
+| update <br/> (where primary key) | 826795                                         | 915811                                          | 928460                                          | 935750                                           | 
+| update <br/> (where index filed) | 254355                                         | 259787                                          | 279842                                          | 306150                                           | 
+| delete <br/> (where primary key) | 1018120                                        | 737666                                          | 1101588                                         | 1342517                                          |
 
 

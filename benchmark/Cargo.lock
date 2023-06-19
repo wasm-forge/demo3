@@ -571,7 +571,7 @@ checksum = "b4e026318236de13568edafd85534ad29910908bf08cdcf177d4403fd4a5f6c4"
 [[package]]
 name = "ic-wasi-polyfill"
 version = "0.3.8"
-source = "git+https://github.com/wasm-forge/ic-wasi-polyfill?rev=d2faf36155c454d7c87272d953c1c2dc0b6bc1b6#d2faf36155c454d7c87272d953c1c2dc0b6bc1b6"
+source = "git+https://github.com/wasm-forge/ic-wasi-polyfill?rev=0e1319a2f4fa7ed359044c8a095c44c305c6acff#0e1319a2f4fa7ed359044c8a095c44c305c6acff"
 dependencies = [
  "function_name",
  "ic-cdk",
