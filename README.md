@@ -97,16 +97,6 @@ fn init() {
 }
 ```
 
-Once the file is updated, setup the environment variables to be able to compile using `clang` for WASI:
-```bash
-export CC=/opt/wasi-sdk/bin/clang
-```
-
-Now, build the wasm-wasi project with the command:
-```bash
-cargo build --release --target wasm32-wasi
-```
-
 ## Deployment and testing
 
 In a separate terminal start the `dfx` environment:
@@ -118,6 +108,17 @@ Go to the `demo3` project folder and create the canister:
 ```bash
 dfx canister create --all
 ```
+
+Setup the environment variables to be able to compile using `clang` for WASI:
+```bash
+export CC=/opt/wasi-sdk/bin/clang
+```
+
+Now, build the wasm-wasi project with the command:
+```bash
+cargo build --release --target wasm32-wasi
+```
+
 
 Now, use the `wasi2ic` tool to re-route the dependencies:
 ```bash
@@ -153,6 +154,7 @@ dfx canister call demo3_backend list
 
 
 The performance estimation was made similar to the one in the alternative [project](https://github.com/froghub-io/ic-sqlite/) implementing the sqlite in IC canister.
+The benchmark source is located in the benchmark folder.
 
 ### Performance based on the stable structures:
 

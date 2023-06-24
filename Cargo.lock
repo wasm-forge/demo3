@@ -261,9 +261,12 @@ name = "demo3_backend"
 version = "0.1.0"
 dependencies = [
  "candid",
+ "hex",
  "ic-cdk",
  "ic-wasi-polyfill",
  "rusqlite",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]
@@ -477,8 +480,8 @@ checksum = "b4e026318236de13568edafd85534ad29910908bf08cdcf177d4403fd4a5f6c4"
 
 [[package]]
 name = "ic-wasi-polyfill"
-version = "0.3.8"
-source = "git+https://github.com/wasm-forge/ic-wasi-polyfill#0e1319a2f4fa7ed359044c8a095c44c305c6acff"
+version = "0.3.9"
+source = "git+https://github.com/wasm-forge/ic-wasi-polyfill#5e986cb3b95a58fbbf9386582f5c48847f22dcca"
 dependencies = [
  "function_name",
  "ic-cdk",
@@ -534,6 +537,12 @@ checksum = "b0fd2260e829bddf4cb6ea802289de2f86d6a7a690192fbe91b3f46e0f2c8473"
 dependencies = [
  "either",
 ]
+
+[[package]]
+name = "itoa"
+version = "1.0.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "453ad9f582a441959e5f0d088b02ce04cfe8d51a8eaf077f12ac6d3e94164ca6"
 
 [[package]]
 name = "lalrpop"
@@ -929,6 +938,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4f3208ce4d8448b3f3e7d168a73f5e0c43a61e32930de3bceeccedb388b6bf06"
 
 [[package]]
+name = "ryu"
+version = "1.0.13"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f91339c0467de62360649f8d3e185ca8de4224ff281f66000de5eb2a77a79041"
+
+[[package]]
 name = "scopeguard"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -961,6 +976,17 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn 2.0.18",
+]
+
+[[package]]
+name = "serde_json"
+version = "1.0.99"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "46266871c240a00b8f503b877622fe33430b3c7d963bdc0f2adc511e54a1eae3"
+dependencies = [
+ "itoa",
+ "ryu",
+ "serde",
 ]
 
 [[package]]
