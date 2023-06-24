@@ -23,6 +23,12 @@ Enter the backend source folder and add a few dependencies:
 ```bash
 cd demo3/src/demo3_backend/
 
+cargo add hex
+
+cargo add serde
+
+cargo add serde_json
+
 cargo add --git https://github.com/wasm-forge/ic-wasi-polyfill
 
 cargo add --git https://github.com/rusqlite/rusqlite rusqlite -F wasm32-wasi-vfs,bundled
