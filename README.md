@@ -216,7 +216,7 @@ dfx canister call demo3_backend list
 
 
 The performance estimation was made similar to the one in the alternative [project](https://github.com/froghub-io/ic-sqlite/) implementing the sqlite in IC canister.
-The benchmark source is located in the benchmark folder.
+The benchmark source is located in the `benchmark` folder.
 
 ### Performance based on the stable structures:
 
