@@ -12,30 +12,31 @@ thread_local! {
 }
 
 #[ic_cdk::update]
-fn add(name: String, data: String) {
+fn add(name: String, data: String, age: u32) {
     DB.with(|db| {
         let mut db = db.borrow_mut();
         let db = db.as_mut().unwrap();
         db.execute(
-            "INSERT INTO person (name, data) VALUES (?1, ?2)",
-            (&name, &data),
+            "INSERT INTO person (name, data, age) VALUES (?1, ?2, ?3)",
+            (&name, &data, age),
         )
         .unwrap();
     });
 }
 
 #[ic_cdk::query]
-fn list() -> Vec<(u64, String, String)> {
+fn list() -> Vec<(u64, String, String, u32)> {
     DB.with(|db| {
         let mut db = db.borrow_mut();
         let db = db.as_mut().unwrap();
-        let mut stmt = db.prepare("SELECT id, name, data FROM person").unwrap();
+        let mut stmt = db.prepare("SELECT id, name, data, age FROM person").unwrap();
         let rows = stmt
             .query_map([], |row| {
                 Ok((
                     row.get(0).unwrap(),
                     row.get(1).unwrap(),
                     row.get(2).unwrap(),
+                    row.get(3).unwrap(),
                 ))
             })
             .unwrap();
@@ -101,7 +102,8 @@ fn init() {
             "CREATE TABLE person (
                 id    INTEGER PRIMARY KEY,
                 name  TEXT NOT NULL,
-                data  TEXT
+                data  TEXT,
+                age   INTEGER
            )",
             (), // empty list of parameters.
         )
