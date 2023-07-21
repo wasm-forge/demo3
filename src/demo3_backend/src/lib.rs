@@ -91,7 +91,7 @@ fn query(sql: String) -> QueryResult {
 #[ic_cdk::init]
 fn init() {
     unsafe {
-        ic_wasi_polyfill::init(&[0u8;32]);
+        ic_wasi_polyfill::init(&[0u8;32], &[]);
     }
 
     DB.with(|db| {
