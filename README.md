@@ -7,7 +7,7 @@ This project shows how to compilte the Rusqlite dependency in order to build the
 
 It is assumed that you have [rust](https://doc.rust-lang.org/book/ch01-01-installation.html), [dfx](https://internetcomputer.org/docs/current/developer-docs/setup/install/), and [wasi2ic](https://github.com/wasm-forge/wasi2ic) installed.
 
-You will also need the Wasm-oriented [clang](https://github.com/WebAssembly/wasi-sdk/releases/) installation. In this tutorial we use the `.deb` package [installation](https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-19/wasi-sdk_19.0_amd64.deb). Once installed the clang compiler is available from the path `/opt/wasi-sdk/bin/`.
+You will also need the Wasm-oriented [clang](https://github.com/WebAssembly/wasi-sdk/releases/) installation. In this tutorial we use the `.deb` package [installation](https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-21/wasi-sdk_21.0_amd64.deb). Once installed the clang compiler is available from the path `/opt/wasi-sdk/bin/`. The additional builtins library will be found in `/opt/wasi-sdk/lib/clang/17/lib/wasi/`. 
 
 
 ## Building project from scratch
@@ -29,9 +29,9 @@ cargo add serde
 
 cargo add serde_json
 
-cargo add --git https://github.com/wasm-forge/ic-wasi-polyfill
+cargo add ic-wasi-polyfill
 
-cargo add --git https://github.com/rusqlite/rusqlite rusqlite -F wasm32-wasi-vfs,bundled
+cargo add rusqlite rusqlite -F wasm32-wasi-vfs,bundled
 ```
 
 Modify the demo3/src/demo3_backend/src/lib.rs file containing the greet method so that it uses the rusqlite backend to store a list of persons:
@@ -127,9 +127,7 @@ fn query(sql: String) -> QueryResult {
 
 #[ic_cdk::init]
 fn init() {
-    unsafe {
-        ic_wasi_polyfill::init(&[0u8;32]);
-    }
+    ic_wasi_polyfill::init(&[0u8;32], &[]);
 
     DB.with(|db| {
         let mut db = db.borrow_mut();
@@ -159,6 +157,15 @@ type QueryResult<T = Vec<Vec<String>>, E = Error> = std::result::Result<T, E>;
 
 ```
 
+Finally, add the `build.rs` file into the `demo3/src/demo3_backend/` folder with the following content:
+```rust
+fn main() {
+    println!("cargo:rustc-link-search=/opt/wasi-sdk/lib/clang/17/lib/wasi/");
+    println!("cargo:rustc-link-arg=-lclang_rt.builtins-wasm32");
+}
+```
+
+
 ## Deployment and testing
 
 In a separate terminal start the `dfx` environment:
@@ -173,7 +180,7 @@ dfx canister create --all
 
 Setup the environment variables to be able to compile using `clang` for WASI:
 ```bash
-export CC=/opt/wasi-sdk/bin/clang
+export CC_wasm_wasi=/opt/wasi-sdk/bin/clang --sysroot=/opt/wasi-sdk/share/wasi-sysroot
 ```
 
 Now, build the wasm-wasi project with the command:

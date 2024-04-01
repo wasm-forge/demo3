@@ -4,8 +4,14 @@
     "demo3_backend": {
       "type": "rust",
       "package": "demo3_backend",
-      "candid": "src/demo3_backend/demo3_backend.did"
+      "candid": "src/demo3_backend/demo3_backend.did",
+      "metadata": [
+        {
+          "name": "candid:service"
+        }
+      ]
     },
+
     "demo3_frontend": {
       "type": "assets",
       "source": [
