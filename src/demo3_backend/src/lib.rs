@@ -112,6 +112,17 @@ fn init() {
     });
 }
 
+#[ic_cdk::post_upgrade]
+fn post_upgrade() {
+    ic_wasi_polyfill::init(&[0u8; 32], &[]);
+
+    DB.with(|db| {
+        let mut db = db.borrow_mut();
+        *db = Some(Connection::open("db_test.db3").unwrap());
+    });
+}
+
+
 #[derive(CandidType, Deserialize)]
 enum Error {
     InvalidCanister,
