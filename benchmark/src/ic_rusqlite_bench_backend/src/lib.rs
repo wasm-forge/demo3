@@ -3,14 +3,26 @@
 extern crate serde;
 
 
+use ic_stable_structures::memory_manager::MemoryId;
+use ic_stable_structures::{memory_manager::MemoryManager, DefaultMemoryImpl};
+
 use std::cell::RefCell;
 use ic_cdk::api::call::RejectionCode;
 use candid::CandidType;
 use rusqlite::Connection;
 use rusqlite::types::Type;
 
+const WASI_MEMORY_ID: u8 = 50;
+
+const MOUNTED_MEMORY_ID: u8 = 20;
+const DB_FILE_NAME: &str = "db.db3";
+const FAST_FILE_NAME: &str = "db.db3";
+
 thread_local! {
     static DB: RefCell<Option<Connection>> = RefCell::new(None);
+    static MEMORY_MANAGER: RefCell<MemoryManager<DefaultMemoryImpl>> =
+        RefCell::new(MemoryManager::init(DefaultMemoryImpl::default()));
+
 }
 
 
@@ -291,7 +303,6 @@ fn bench1_query_person_by_limit_offset(limit: usize, offset: usize) -> Result {
 
     })
 
-
 }
 
 #[ic_cdk::update]
@@ -308,9 +319,7 @@ fn bench1_update_person_by_id(offset: usize) -> Result {
             Ok(_) => Ok(format!("update_by_id performance_counter: {:?}", ic_cdk::api::performance_counter(0))),
             Err(err) => Err(Error::CanisterError {message: format!("{:?}", err) })
         }
-
     })
-
 }
 
 #[ic_cdk::update]
@@ -327,9 +336,7 @@ fn bench1_update_person_by_name(offset: usize) -> Result {
             Ok(_) => Ok(format!("update_by_name performance_counter: {:?}", ic_cdk::api::performance_counter(0))),
             Err(err) => Err(Error::CanisterError {message: format!("update_by_name: {:?}", err) })
         }
-
     })
-
 }
 
 #[ic_cdk::update]
@@ -603,21 +610,42 @@ struct Person2 {
 }
 
 
-fn create_database() {
+fn open_database() {
     DB.with(|db| {
         let mut db = db.borrow_mut();
-        *db = Some(Connection::open("db.db3").unwrap());
+        *db = Some(Connection::open(DB_FILE_NAME).unwrap());
     });
 }
 
 #[ic_cdk::init]
 pub fn init() {
-    unsafe{
-        ic_wasi_polyfill::init(&[0u8;32]);
-    }
+    ic_wasi_polyfill::init(&[0u8;32], &[]);
 
-    create_database();
+    MEMORY_MANAGER.with(|m| {
+        let m = m.borrow();
+        ic_wasi_polyfill::init_with_memory_manager(&[0u8; 32], &[], &m, WASI_MEMORY_ID..WASI_MEMORY_ID + 10);
+
+        let memory = m.get(MemoryId::new(MOUNTED_MEMORY_ID));
+        //ic_wasi_polyfill::mount_memory_file(FAST_FILE_NAME, Box::new(memory));
+    });
+
+    open_database();
 }
+
+#[ic_cdk::post_upgrade]
+pub fn post_upgrade() {
+
+    MEMORY_MANAGER.with(|m| {
+        let m = m.borrow();
+        ic_wasi_polyfill::init_with_memory_manager(&[0u8; 32], &[], &m, WASI_MEMORY_ID..WASI_MEMORY_ID + 10);
+
+        let memory = m.get(MemoryId::new(MOUNTED_MEMORY_ID));
+        //ic_wasi_polyfill::mount_memory_file(FAST_FILE_NAME, Box::new(memory));
+    });
+
+    open_database();
+}
+
 
 #[derive(CandidType, Deserialize)]
 enum Error {

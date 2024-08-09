@@ -10,11 +10,11 @@ crate-type = ["cdylib"]
 
 [dependencies]
 candid = "0.10"
-ic-cdk = "0.13"
+ic-cdk = "0.15"
 hex = "0.4.3"
 serde = "1.0.164"
 serde_json = "1.0.97"
 
-ic-wasi-polyfill = {version = "0.5"}
+ic-wasi-polyfill = {path = "../../../ic-wasi-polyfill", version = "0.6"}
 rusqlite = {version = "0.31", features = ["bundled", "wasm32-wasi-vfs"] }
 

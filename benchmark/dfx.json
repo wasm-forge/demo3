@@ -5,15 +5,6 @@
       "type": "rust",
       "package": "ic_rusqlite_bench_backend",
       "candid": "src/ic_rusqlite_bench_backend/ic_rusqlite_bench_backend.did"
-    },
-    "ic_rusqlite_bench_frontend": {
-      "type": "assets",
-      "source": [
-        "src/ic_rusqlite_bench_frontend/assets"
-      ],
-      "dependencies": [
-        "ic_rusqlite_bench_backend"
-      ]
     }
   },
   "defaults": {
@@ -24,3 +15,5 @@
   },
   "output_env_file": ".env"
 }
+
+

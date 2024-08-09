@@ -8,6 +8,8 @@ cargo build --release --target "wasm32-wasi"
 
 rm -f ./target/wasm32-wasi/release/no_wasi.wasm.gz
 
-wasi2ic ./target/wasm32-wasi/release/demo3_backend.wasm ./target/wasm32-wasi/release/no_wasi.wasm && gzip ./target/wasm32-wasi/release/no_wasi.wasm
+wasi2ic ./target/wasm32-wasi/release/demo3_backend.wasm ./target/wasm32-wasi/release/no_wasi.wasm
+
+gzip ./target/wasm32-wasi/release/no_wasi.wasm
 
 
