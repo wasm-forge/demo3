@@ -29,6 +29,8 @@ cargo add serde
 
 cargo add serde_json
 
+cargo add ic-stable-structures
+
 cargo add ic-wasi-polyfill
 
 cargo add rusqlite rusqlite -F wasm32-wasi-vfs,bundled
@@ -36,18 +38,25 @@ cargo add rusqlite rusqlite -F wasm32-wasi-vfs,bundled
 
 Modify the demo3/src/demo3_backend/src/lib.rs file containing the greet method so that it uses the rusqlite backend to store a list of persons:
 ```rust
-#[macro_use]
-extern crate serde;
-
 use std::cell::RefCell;
 
 use candid::CandidType;
+use candid::Deserialize;
 use rusqlite::types::Type;
 use rusqlite::Connection;
 
+use ic_stable_structures::memory_manager::MemoryId;
+use ic_stable_structures::{memory_manager::MemoryManager, DefaultMemoryImpl};
+
 thread_local! {
     static DB: RefCell<Option<Connection>> = RefCell::new(None);
+    static MEMORY_MANAGER: RefCell<MemoryManager<DefaultMemoryImpl>> =
+        RefCell::new(MemoryManager::init(DefaultMemoryImpl::default()));
 }
+
+const MOUNTED_MEMORY_ID: u8 = 20;
+const DB_FILE_NAME: &str = "db.db3";
+
 
 #[ic_cdk::update]
 fn add(name: String, data: String, age: u32) {
@@ -131,11 +140,19 @@ fn query(sql: String) -> QueryResult {
 
 #[ic_cdk::init]
 fn init() {
-    ic_wasi_polyfill::init(&[0u8; 32], &[]);
+
+    MEMORY_MANAGER.with(|m| {
+        let m = m.borrow();
+        ic_wasi_polyfill::init_with_memory_manager(&[0u8; 32], &[], &m, 200..210);
+
+        // mount virtual memory as file for faster DB operations
+        let memory = m.get(MemoryId::new(MOUNTED_MEMORY_ID));
+        ic_wasi_polyfill::mount_memory_file(DB_FILE_NAME, Box::new(memory));
+    });
 
     DB.with(|db| {
         let mut db = db.borrow_mut();
-        *db = Some(Connection::open("db_test.db3").unwrap());
+        *db = Some(Connection::open(DB_FILE_NAME).unwrap());
         let db = db.as_mut().unwrap();
         db.execute(
             "CREATE TABLE person (
@@ -152,11 +169,19 @@ fn init() {
 
 #[ic_cdk::post_upgrade]
 fn post_upgrade() {
-    ic_wasi_polyfill::init(&[0u8; 32], &[]);
+    MEMORY_MANAGER.with(|m| {
+        let m = m.borrow();
+        ic_wasi_polyfill::init_with_memory_manager(&[0u8; 32], &[], &m, 200..210);
+
+        // after upgrade we still need to explicitly mount the memory (otherwise the usual file is used)
+        // its metadata infromation was stored in the file system and no other init steps are necessary
+        let memory = m.get(MemoryId::new(MOUNTED_MEMORY_ID));
+        ic_wasi_polyfill::mount_memory_file(DB_FILE_NAME, Box::new(memory));
+    });
 
     DB.with(|db| {
         let mut db = db.borrow_mut();
-        *db = Some(Connection::open("db_test.db3").unwrap());
+        *db = Some(Connection::open(DB_FILE_NAME).unwrap());
     });
 }
 
@@ -168,7 +193,6 @@ enum Error {
 }
 
 type QueryResult<T = Vec<Vec<String>>, E = Error> = std::result::Result<T, E>;
-
 
 ```
 
