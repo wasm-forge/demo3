@@ -1,8 +1,4 @@
 
-#[macro_use]
-extern crate serde;
-
-
 use ic_stable_structures::memory_manager::MemoryId;
 use ic_stable_structures::{memory_manager::MemoryManager, DefaultMemoryImpl};
 
@@ -22,7 +18,6 @@ thread_local! {
     static DB: RefCell<Option<Connection>> = RefCell::new(None);
     static MEMORY_MANAGER: RefCell<MemoryManager<DefaultMemoryImpl>> =
         RefCell::new(MemoryManager::init(DefaultMemoryImpl::default()));
-
 }
 
 
@@ -626,7 +621,7 @@ pub fn init() {
         ic_wasi_polyfill::init_with_memory_manager(&[0u8; 32], &[], &m, WASI_MEMORY_ID..WASI_MEMORY_ID + 10);
 
         let memory = m.get(MemoryId::new(MOUNTED_MEMORY_ID));
-        //ic_wasi_polyfill::mount_memory_file(FAST_FILE_NAME, Box::new(memory));
+        ic_wasi_polyfill::mount_memory_file(FAST_FILE_NAME, Box::new(memory));
     });
 
     open_database();
@@ -640,7 +635,7 @@ pub fn post_upgrade() {
         ic_wasi_polyfill::init_with_memory_manager(&[0u8; 32], &[], &m, WASI_MEMORY_ID..WASI_MEMORY_ID + 10);
 
         let memory = m.get(MemoryId::new(MOUNTED_MEMORY_ID));
-        //ic_wasi_polyfill::mount_memory_file(FAST_FILE_NAME, Box::new(memory));
+        ic_wasi_polyfill::mount_memory_file(FAST_FILE_NAME, Box::new(memory));
     });
 
     open_database();
