@@ -138,9 +138,8 @@ fn query(sql: String) -> QueryResult {
     })
 }
 
-#[ic_cdk::init]
-fn init() {
 
+fn mount_memory_files() {
     MEMORY_MANAGER.with(|m| {
         let m = m.borrow();
         ic_wasi_polyfill::init_with_memory_manager(&[0u8; 32], &[], &m, 200..210);
@@ -149,13 +148,22 @@ fn init() {
         let memory = m.get(MemoryId::new(MOUNTED_MEMORY_ID));
         ic_wasi_polyfill::mount_memory_file(DB_FILE_NAME, Box::new(memory));
     });
+}
 
+fn open_database() {
     DB.with(|db| {
         let mut db = db.borrow_mut();
         *db = Some(Connection::open(DB_FILE_NAME).unwrap());
+    });
+
+}
+
+fn create_tables() {
+    DB.with(|db| {
+        let mut db = db.borrow_mut();
         let db = db.as_mut().unwrap();
         db.execute(
-            "CREATE TABLE person (
+            "CREATE TABLE person IF NOT EXISTS (
                 id    INTEGER PRIMARY KEY,
                 name  TEXT NOT NULL,
                 data  TEXT,
@@ -167,22 +175,48 @@ fn init() {
     });
 }
 
-#[ic_cdk::post_upgrade]
-fn post_upgrade() {
-    MEMORY_MANAGER.with(|m| {
-        let m = m.borrow();
-        ic_wasi_polyfill::init_with_memory_manager(&[0u8; 32], &[], &m, 200..210);
-
-        // after upgrade we still need to explicitly mount the memory (otherwise the usual file is used)
-        // its metadata infromation was stored in the file system and no other init steps are necessary
-        let memory = m.get(MemoryId::new(MOUNTED_MEMORY_ID));
-        ic_wasi_polyfill::mount_memory_file(DB_FILE_NAME, Box::new(memory));
-    });
-
+fn set_pragmas() {
+    // set pragmas
     DB.with(|db| {
         let mut db = db.borrow_mut();
-        *db = Some(Connection::open(DB_FILE_NAME).unwrap());
-    });
+        let db = db.as_mut().unwrap();
+
+        // do not create and destroy the journal file every time, set its size to 0 instead
+        db.pragma_update(None, "journal_mode", &"TRUNCATE" as &dyn ToSql).unwrap();
+        
+        // reduce synchronizations
+        db.pragma_update(None, "synchronous", &0 as &dyn ToSql).unwrap();
+        
+        // use fewer writes to disk with larger memory chunks
+        // Note: values above 16384 cause I/O errors for some reason
+        db.pragma_update(None, "page_size", &16384 as &dyn ToSql).unwrap();
+
+        // reduce locks and unlocks
+        db.pragma_update(None, "locking_mode", &"EXCLUSIVE" as &dyn ToSql).unwrap();
+        
+        // temp_store = MEMORY, disables creating temp files, improves performance, 
+        // this workaround also avoids sqlite error on complex queries
+        db.pragma_update(None, "temp_store", &2 as &dyn ToSql).unwrap();
+
+        // add this option to minimize disk reads and work in canister memory instead
+        //db.pragma_update(None, "cache_size", &1000000 as &dyn ToSql).unwrap();
+    });    
+
+}
+
+#[ic_cdk::init]
+fn init() {
+    mount_memory_files();
+    open_database();
+    set_pragmas();
+    create_tables();
+}
+
+#[ic_cdk::post_upgrade]
+fn post_upgrade() {
+    mount_memory_files();
+    open_database();
+    set_pragmas();
 }
 
 
@@ -275,7 +309,7 @@ The benchmark source is located in the `benchmark` folder.
 | select <br/> (where primary key) | 51482                                         | 52810                                          | 106911                                          | 107700                                           | 
 | select <br/> (where index field) | 66882                                         | 68559                                          | 69719                                          | 126714                                           | 
 | select <br/> (where like field)  | 12422579                                      | 124389782                                      | 668933716                                      | 1338585422                                       | 
-| update <br/> (where primary key) | 8100314                                        | 9622378                                         | 8991314                                         | 9690872                                          | 
-| update <br/> (where index filed) | 531129                                         | 558131                                          | 591241                                          | 629889                                           | 
+| update <br/> (where primary key) | 35237                                        | 35908                                         | 89981                                         | 90747                                          | 
+| update <br/> (where index filed) | 65888                                         | 66842                                          | 121665                                          | 120353                                           | 
 | delete <br/> (where primary key) | 26445                                          | 27123                                           | 81252                                           | 81983                                            |
 
