@@ -1,0 +1,101 @@
+#!ic-repl
+
+function install(wasm, args, cycle) {
+  let id = call ic.provisional_create_canister_with_cycles(record { settings = null; amount = cycle });
+  let S = id.canister_id;
+  let _ = call ic.install_code(
+    record {
+      arg = args;
+      wasm_module = gzip(wasm);
+      mode = variant { install };
+      canister_id = S;
+    }
+  );
+  S
+};
+
+function upgrade(id, wasm, args) {
+  call ic.install_code(
+    record {
+      arg = args;
+      wasm_module = gzip(wasm);
+      mode = variant { upgrade };
+      canister_id = id;
+    }
+  );
+};
+
+function uninstall(id) {
+  call ic.stop_canister(record { canister_id = id });
+  call ic.delete_canister(record { canister_id = id });
+};
+
+function get_memory(cid) {
+  let _ = call ic.canister_status(record { canister_id = cid });
+  _.memory_size
+};
+
+let file = "README.md";
+
+let rs_config = record { start_page = 1; page_limit = 1128};
+
+let wasm_name = "../target/wasm32-wasi/release/ic_rusqlite_bench_backend.wasm";
+
+
+function perf_insert_persons() {
+  let cid = install(wasm_profiling(wasm_name, rs_config), encode (), null);
+
+  call cid.bench1_insert_person( (0: nat64), (10000: nat64) );
+  flamegraph(cid, "perf_insert_persons", "svg/perf_insert_persons.svg");
+  uninstall(cid)
+};
+
+
+function perf_insert_persons_batch() {
+  let cid = install(wasm_profiling(wasm_name, rs_config), encode (), null);
+
+  call cid.bench1_insert_person_batch( (0: nat64), (10000: nat64) );
+  flamegraph(cid, "perf_insert_persons_batch", "svg/perf_insert_persons_batch.svg");
+  uninstall(cid)
+};
+
+
+
+function perf_count() {
+  let cid = install(wasm_profiling(wasm_name, rs_config), encode (), null);
+
+  call cid.__toggle_tracing();
+  call cid.bench1_insert_person( (0: nat64), (100000: nat64) );
+  call cid.__toggle_tracing();
+
+  call cid.count( "PERSON" );
+  flamegraph(cid, "perf_count", "svg/perf_count.svg");
+  
+  uninstall(cid)
+};
+
+function perf_query_by_like_name() {
+  let cid = install(wasm_profiling(wasm_name, rs_config), encode (), null);
+
+  call cid.__toggle_tracing();
+  call cid.bench1_insert_person( (0: nat64), (100000: nat64) );
+  call cid.__toggle_tracing();
+
+  call cid.bench1_query_person_by_like_name( (90004: nat64) );
+  flamegraph(cid, "perf_query_by_like_name", "svg/perf_query_by_like_name.svg");
+  
+  uninstall(cid)
+};
+
+
+//perf_query_by_like_name();
+//perf_insert_persons();
+perf_insert_persons_batch();
+//perf_count();
+
+//call cid.__toggle_tracing();
+//call cid.list_files("files");
+//call cid.__toggle_tracing();
+
+
+

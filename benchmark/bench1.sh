@@ -2,10 +2,10 @@
 export backend=ic_rusqlite_bench_backend
 
 # create table person
-dfx canister call $backend execute 'create table person ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, age INTEGER, gender INTEGER )'
+#dfx canister call $backend execute 'create table if not exists person ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, age INTEGER, gender INTEGER )'
 
 # create person name index
-dfx canister call $backend execute 'create index name on person(name)'
+#dfx canister call $backend execute 'create index if not exists name on person(name)'
 
 TOTAL=1000000
 COUNTER=0
@@ -16,7 +16,7 @@ do
   CUR=`expr $COUNTER + $PER`
   echo "--- ${CUR} ---"
 
-  dfx canister call $backend bench1_insert_person "(${COUNTER}, $PER)"
+  dfx canister call $backend bench1_insert_person2 "(${COUNTER}, $PER)"
 
   COUNTER=`expr $COUNTER + $PER`
 

@@ -1,0 +1,242 @@
+benches:
+  add_1000000_persons:
+    total:
+      instructions: 8128621400
+      heap_increase: 123
+      stable_memory_increase: 256
+    scopes: {}
+  add_100000_persons:
+    total:
+      instructions: 806299562
+      heap_increase: 35
+      stable_memory_increase: 0
+    scopes: {}
+  add_500000_persons:
+    total:
+      instructions: 4059571763
+      heap_increase: 123
+      stable_memory_increase: 128
+    scopes: {}
+  count_1000000_persons:
+    total:
+      instructions: 66793003
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  count_100000_persons:
+    total:
+      instructions: 99157
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  count_10000_persons:
+    total:
+      instructions: 37043
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  count_500000_persons:
+    total:
+      instructions: 18184213
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  delete_person_by_id_after_10000:
+    total:
+      instructions: 26445
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  delete_person_by_id_after_100000:
+    total:
+      instructions: 27123
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  delete_person_by_id_after_1000000:
+    total:
+      instructions: 81983
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  delete_person_by_id_after_500000:
+    total:
+      instructions: 81252
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  insert_1_person_after_10000:
+    total:
+      instructions: 2900744
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  insert_1_person_after_100000:
+    total:
+      instructions: 2892191
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  insert_1_person_after_1000000:
+    total:
+      instructions: 3037502
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  insert_1_person_after_500000:
+    total:
+      instructions: 2889744
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_1_person_by_name_after_10000:
+    total:
+      instructions: 66882
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_1_person_by_name_after_100000:
+    total:
+      instructions: 68559
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_1_person_by_name_after_1000000:
+    total:
+      instructions: 126714
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_1_person_by_name_after_500000:
+    total:
+      instructions: 69719
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_person_by_id_after_10000:
+    total:
+      instructions: 51482
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_person_by_id_after_100000:
+    total:
+      instructions: 52810
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_person_by_id_after_1000000:
+    total:
+      instructions: 107700
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_person_by_id_after_500000:
+    total:
+      instructions: 106911
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_person_by_like_name_after_10000:
+    total:
+      instructions: 12422579
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_person_by_like_name_after_100000:
+    total:
+      instructions: 124389782
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_person_by_like_name_after_1000000:
+    total:
+      instructions: 1338585422
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_person_by_like_name_after_500000:
+    total:
+      instructions: 668933716
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_person_by_limit_offset_after_10000:
+    total:
+      instructions: 1112389
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_person_by_limit_offset_after_100000:
+    total:
+      instructions: 9438681
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_person_by_limit_offset_after_1000000:
+    total:
+      instructions: 132770673
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  query_person_by_limit_offset_after_500000:
+    total:
+      instructions: 66294789
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  test_add_500000_persons:
+    total:
+      instructions: 4059571763
+      heap_increase: 123
+      stable_memory_increase: 128
+    scopes: {}
+  update_person_by_id_after_10000:
+    total:
+      instructions: 35237
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  update_person_by_id_after_100000:
+    total:
+      instructions: 35908
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  update_person_by_id_after_1000000:
+    total:
+      instructions: 90747
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  update_person_by_id_after_500000:
+    total:
+      instructions: 89981
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  update_person_by_name_after_10000:
+    total:
+      instructions: 65888
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  update_person_by_name_after_100000:
+    total:
+      instructions: 66842
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  update_person_by_name_after_1000000:
+    total:
+      instructions: 121665
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+  update_person_by_name_after_500000:
+    total:
+      instructions: 120353
+      heap_increase: 0
+      stable_memory_increase: 0
+    scopes: {}
+version: 0.1.5

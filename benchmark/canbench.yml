@@ -1,0 +1,6 @@
+build_cmd:
+  ./build.sh
+
+wasm_path:
+  ./target/wasm32-wasi/release/ic_rusqlite_bench_backend.wasm
+
